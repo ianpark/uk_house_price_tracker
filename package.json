@@ -1,0 +1,18 @@
+{
+  "name": "hpc",
+  "version": "1.0.0",
+  "description": "House price tracker",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ian Park",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.5.0",
+    "collections": "^5.0.6",
+    "express": "^4.14.1",
+    "q": "^1.4.1",
+    "request": "^2.79.0"
+  }
+}
