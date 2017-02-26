@@ -12,110 +12,110 @@ prefix lrcommon: <http://landregistry.data.gov.uk/def/common/>
 PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
 PREFIX  ukhpi: <http://landregistry.data.gov.uk/def/ukhpi/>
 
-SELECT  ?item ?ukhpi_refMonth ?ukhpi_averagePrice ?ukhpi_averagePriceCash ?ukhpi_averagePriceDetached ?ukhpi_averagePriceExistingProperty ?ukhpi_averagePriceFirstTimeBuyer ?ukhpi_averagePriceFlatMaisonette ?ukhpi_averagePriceFormerOwnerOccupier ?ukhpi_averagePriceMortgage ?ukhpi_averagePriceNewBuild ?ukhpi_averagePriceSA ?ukhpi_averagePriceSemiDetached ?ukhpi_averagePriceTerraced ?ukhpi_housePriceIndex ?ukhpi_housePriceIndexCash ?ukhpi_housePriceIndexDetached ?ukhpi_housePriceIndexExistingProperty ?ukhpi_housePriceIndexFirstTimeBuyer ?ukhpi_housePriceIndexFlatMaisonette ?ukhpi_housePriceIndexFormerOwnerOccupier ?ukhpi_housePriceIndexMortgage ?ukhpi_housePriceIndexNewBuild ?ukhpi_housePriceIndexSA ?ukhpi_housePriceIndexSemiDetached ?ukhpi_housePriceIndexTerraced ?ukhpi_percentageAnnualChange ?ukhpi_percentageAnnualChangeCash ?ukhpi_percentageAnnualChangeDetached ?ukhpi_percentageAnnualChangeExistingProperty ?ukhpi_percentageAnnualChangeFirstTimeBuyer ?ukhpi_percentageAnnualChangeFlatMaisonette ?ukhpi_percentageAnnualChangeFormerOwnerOccupier ?ukhpi_percentageAnnualChangeMortgage ?ukhpi_percentageAnnualChangeNewBuild ?ukhpi_percentageAnnualChangeSemiDetached ?ukhpi_percentageAnnualChangeTerraced ?ukhpi_percentageChange ?ukhpi_percentageChangeCash ?ukhpi_percentageChangeDetached ?ukhpi_percentageChangeExistingProperty ?ukhpi_percentageChangeFirstTimeBuyer ?ukhpi_percentageChangeFlatMaisonette ?ukhpi_percentageChangeFormerOwnerOccupier ?ukhpi_percentageChangeMortgage ?ukhpi_percentageChangeNewBuild ?ukhpi_percentageChangeSemiDetached ?ukhpi_percentageChangeTerraced ?ukhpi_refPeriodDuration ?ukhpi_refPeriodStart ?ukhpi_salesVolume
+SELECT  ?item ?refMonth ?averagePrice ?averagePriceCash ?averagePriceDetached ?averagePriceExistingProperty ?averagePriceFirstTimeBuyer ?averagePriceFlatMaisonette ?averagePriceFormerOwnerOccupier ?averagePriceMortgage ?averagePriceNewBuild ?averagePriceSA ?averagePriceSemiDetached ?averagePriceTerraced ?housePriceIndex ?housePriceIndexCash ?housePriceIndexDetached ?housePriceIndexExistingProperty ?housePriceIndexFirstTimeBuyer ?housePriceIndexFlatMaisonette ?housePriceIndexFormerOwnerOccupier ?housePriceIndexMortgage ?housePriceIndexNewBuild ?housePriceIndexSA ?housePriceIndexSemiDetached ?housePriceIndexTerraced ?percentageAnnualChange ?percentageAnnualChangeCash ?percentageAnnualChangeDetached ?percentageAnnualChangeExistingProperty ?percentageAnnualChangeFirstTimeBuyer ?percentageAnnualChangeFlatMaisonette ?percentageAnnualChangeFormerOwnerOccupier ?percentageAnnualChangeMortgage ?percentageAnnualChangeNewBuild ?percentageAnnualChangeSemiDetached ?percentageAnnualChangeTerraced ?percentageChange ?percentageChangeCash ?percentageChangeDetached ?percentageChangeExistingProperty ?percentageChangeFirstTimeBuyer ?percentageChangeFlatMaisonette ?percentageChangeFormerOwnerOccupier ?percentageChangeMortgage ?percentageChangeNewBuild ?percentageChangeSemiDetached ?percentageChangeTerraced ?refPeriodDuration ?refPeriodStart ?salesVolume
 WHERE
-  { ?item ukhpi:refMonth ?ukhpi_refMonth .
+  { ?item ukhpi:refMonth ?refMonth .
     ?item ukhpi:refRegion <http://landregistry.data.gov.uk/id/region/%REGION%>
     OPTIONAL
-      { ?item ukhpi:averagePrice ?ukhpi_averagePrice }
+      { ?item ukhpi:averagePrice ?averagePrice }
     OPTIONAL
-      { ?item ukhpi:averagePriceCash ?ukhpi_averagePriceCash }
+      { ?item ukhpi:averagePriceCash ?averagePriceCash }
     OPTIONAL
-      { ?item ukhpi:averagePriceDetached ?ukhpi_averagePriceDetached }
+      { ?item ukhpi:averagePriceDetached ?averagePriceDetached }
     OPTIONAL
-      { ?item ukhpi:averagePriceExistingProperty ?ukhpi_averagePriceExistingProperty }
+      { ?item ukhpi:averagePriceExistingProperty ?averagePriceExistingProperty }
     OPTIONAL
-      { ?item ukhpi:averagePriceFirstTimeBuyer ?ukhpi_averagePriceFirstTimeBuyer }
+      { ?item ukhpi:averagePriceFirstTimeBuyer ?averagePriceFirstTimeBuyer }
     OPTIONAL
-      { ?item ukhpi:averagePriceFlatMaisonette ?ukhpi_averagePriceFlatMaisonette }
+      { ?item ukhpi:averagePriceFlatMaisonette ?averagePriceFlatMaisonette }
     OPTIONAL
-      { ?item ukhpi:averagePriceFormerOwnerOccupier ?ukhpi_averagePriceFormerOwnerOccupier }
+      { ?item ukhpi:averagePriceFormerOwnerOccupier ?averagePriceFormerOwnerOccupier }
     OPTIONAL
-      { ?item ukhpi:averagePriceMortgage ?ukhpi_averagePriceMortgage }
+      { ?item ukhpi:averagePriceMortgage ?averagePriceMortgage }
     OPTIONAL
-      { ?item ukhpi:averagePriceNewBuild ?ukhpi_averagePriceNewBuild }
+      { ?item ukhpi:averagePriceNewBuild ?averagePriceNewBuild }
     OPTIONAL
-      { ?item ukhpi:averagePriceSA ?ukhpi_averagePriceSA }
+      { ?item ukhpi:averagePriceSA ?averagePriceSA }
     OPTIONAL
-      { ?item ukhpi:averagePriceSemiDetached ?ukhpi_averagePriceSemiDetached }
+      { ?item ukhpi:averagePriceSemiDetached ?averagePriceSemiDetached }
     OPTIONAL
-      { ?item ukhpi:averagePriceTerraced ?ukhpi_averagePriceTerraced }
+      { ?item ukhpi:averagePriceTerraced ?averagePriceTerraced }
     OPTIONAL
-      { ?item ukhpi:housePriceIndex ?ukhpi_housePriceIndex }
+      { ?item ukhpi:housePriceIndex ?housePriceIndex }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexCash ?ukhpi_housePriceIndexCash }
+      { ?item ukhpi:housePriceIndexCash ?housePriceIndexCash }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexDetached ?ukhpi_housePriceIndexDetached }
+      { ?item ukhpi:housePriceIndexDetached ?housePriceIndexDetached }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexExistingProperty ?ukhpi_housePriceIndexExistingProperty }
+      { ?item ukhpi:housePriceIndexExistingProperty ?housePriceIndexExistingProperty }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexFirstTimeBuyer ?ukhpi_housePriceIndexFirstTimeBuyer }
+      { ?item ukhpi:housePriceIndexFirstTimeBuyer ?housePriceIndexFirstTimeBuyer }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexFlatMaisonette ?ukhpi_housePriceIndexFlatMaisonette }
+      { ?item ukhpi:housePriceIndexFlatMaisonette ?housePriceIndexFlatMaisonette }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexFormerOwnerOccupier ?ukhpi_housePriceIndexFormerOwnerOccupier }
+      { ?item ukhpi:housePriceIndexFormerOwnerOccupier ?housePriceIndexFormerOwnerOccupier }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexMortgage ?ukhpi_housePriceIndexMortgage }
+      { ?item ukhpi:housePriceIndexMortgage ?housePriceIndexMortgage }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexNewBuild ?ukhpi_housePriceIndexNewBuild }
+      { ?item ukhpi:housePriceIndexNewBuild ?housePriceIndexNewBuild }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexSA ?ukhpi_housePriceIndexSA }
+      { ?item ukhpi:housePriceIndexSA ?housePriceIndexSA }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexSemiDetached ?ukhpi_housePriceIndexSemiDetached }
+      { ?item ukhpi:housePriceIndexSemiDetached ?housePriceIndexSemiDetached }
     OPTIONAL
-      { ?item ukhpi:housePriceIndexTerraced ?ukhpi_housePriceIndexTerraced }
+      { ?item ukhpi:housePriceIndexTerraced ?housePriceIndexTerraced }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChange ?ukhpi_percentageAnnualChange }
+      { ?item ukhpi:percentageAnnualChange ?percentageAnnualChange }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeCash ?ukhpi_percentageAnnualChangeCash }
+      { ?item ukhpi:percentageAnnualChangeCash ?percentageAnnualChangeCash }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeDetached ?ukhpi_percentageAnnualChangeDetached }
+      { ?item ukhpi:percentageAnnualChangeDetached ?percentageAnnualChangeDetached }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeExistingProperty ?ukhpi_percentageAnnualChangeExistingProperty }
+      { ?item ukhpi:percentageAnnualChangeExistingProperty ?percentageAnnualChangeExistingProperty }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeFirstTimeBuyer ?ukhpi_percentageAnnualChangeFirstTimeBuyer }
+      { ?item ukhpi:percentageAnnualChangeFirstTimeBuyer ?percentageAnnualChangeFirstTimeBuyer }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeFlatMaisonette ?ukhpi_percentageAnnualChangeFlatMaisonette }
+      { ?item ukhpi:percentageAnnualChangeFlatMaisonette ?percentageAnnualChangeFlatMaisonette }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeFormerOwnerOccupier ?ukhpi_percentageAnnualChangeFormerOwnerOccupier }
+      { ?item ukhpi:percentageAnnualChangeFormerOwnerOccupier ?percentageAnnualChangeFormerOwnerOccupier }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeMortgage ?ukhpi_percentageAnnualChangeMortgage }
+      { ?item ukhpi:percentageAnnualChangeMortgage ?percentageAnnualChangeMortgage }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeNewBuild ?ukhpi_percentageAnnualChangeNewBuild }
+      { ?item ukhpi:percentageAnnualChangeNewBuild ?percentageAnnualChangeNewBuild }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeSemiDetached ?ukhpi_percentageAnnualChangeSemiDetached }
+      { ?item ukhpi:percentageAnnualChangeSemiDetached ?percentageAnnualChangeSemiDetached }
     OPTIONAL
-      { ?item ukhpi:percentageAnnualChangeTerraced ?ukhpi_percentageAnnualChangeTerraced }
+      { ?item ukhpi:percentageAnnualChangeTerraced ?percentageAnnualChangeTerraced }
     OPTIONAL
-      { ?item ukhpi:percentageChange ?ukhpi_percentageChange }
+      { ?item ukhpi:percentageChange ?percentageChange }
     OPTIONAL
-      { ?item ukhpi:percentageChangeCash ?ukhpi_percentageChangeCash }
+      { ?item ukhpi:percentageChangeCash ?percentageChangeCash }
     OPTIONAL
-      { ?item ukhpi:percentageChangeDetached ?ukhpi_percentageChangeDetached }
+      { ?item ukhpi:percentageChangeDetached ?percentageChangeDetached }
     OPTIONAL
-      { ?item ukhpi:percentageChangeExistingProperty ?ukhpi_percentageChangeExistingProperty }
+      { ?item ukhpi:percentageChangeExistingProperty ?percentageChangeExistingProperty }
     OPTIONAL
-      { ?item ukhpi:percentageChangeFirstTimeBuyer ?ukhpi_percentageChangeFirstTimeBuyer }
+      { ?item ukhpi:percentageChangeFirstTimeBuyer ?percentageChangeFirstTimeBuyer }
     OPTIONAL
-      { ?item ukhpi:percentageChangeFlatMaisonette ?ukhpi_percentageChangeFlatMaisonette }
+      { ?item ukhpi:percentageChangeFlatMaisonette ?percentageChangeFlatMaisonette }
     OPTIONAL
-      { ?item ukhpi:percentageChangeFormerOwnerOccupier ?ukhpi_percentageChangeFormerOwnerOccupier }
+      { ?item ukhpi:percentageChangeFormerOwnerOccupier ?percentageChangeFormerOwnerOccupier }
     OPTIONAL
-      { ?item ukhpi:percentageChangeMortgage ?ukhpi_percentageChangeMortgage }
+      { ?item ukhpi:percentageChangeMortgage ?percentageChangeMortgage }
     OPTIONAL
-      { ?item ukhpi:percentageChangeNewBuild ?ukhpi_percentageChangeNewBuild }
+      { ?item ukhpi:percentageChangeNewBuild ?percentageChangeNewBuild }
     OPTIONAL
-      { ?item ukhpi:percentageChangeSemiDetached ?ukhpi_percentageChangeSemiDetached }
+      { ?item ukhpi:percentageChangeSemiDetached ?percentageChangeSemiDetached }
     OPTIONAL
-      { ?item ukhpi:percentageChangeTerraced ?ukhpi_percentageChangeTerraced }
+      { ?item ukhpi:percentageChangeTerraced ?percentageChangeTerraced }
     OPTIONAL
-      { ?item ukhpi:refPeriodDuration ?ukhpi_refPeriodDuration }
+      { ?item ukhpi:refPeriodDuration ?refPeriodDuration }
     OPTIONAL
-      { ?item ukhpi:refPeriodStart ?ukhpi_refPeriodStart }
+      { ?item ukhpi:refPeriodStart ?refPeriodStart }
     OPTIONAL
-      { ?item ukhpi:salesVolume ?ukhpi_salesVolume }
-    FILTER ( ?ukhpi_refMonth >= "1990-01"^^xsd:gYearMonth )
-    FILTER ( ?ukhpi_refMonth <= "2020-02"^^xsd:gYearMonth )
+      { ?item ukhpi:salesVolume ?salesVolume }
+    FILTER ( ?refMonth >= "1990-01"^^xsd:gYearMonth )
+    FILTER ( ?refMonth <= "2020-02"^^xsd:gYearMonth )
   }`;
 const land_reg_query_url = "http://landregistry.data.gov.uk/app/root/qonsole/query";
 

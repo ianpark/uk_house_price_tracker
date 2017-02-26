@@ -1,0 +1,1223 @@
+{ "format" : "linked-data-api", "version" : "0.2", "result" : {"_about" : "http://landregistry.data.gov.uk/doc/region.json?_pageSize=500&_page=1", "definition" : "http://landregistry.data.gov.uk/meta/doc/region.json", "extendedMetadataVersion" : "http://landregistry.data.gov.uk/doc/region.json?_pageSize=500&_page=1&_metadata=all", "first" : "http://landregistry.data.gov.uk/doc/region.json?_pageSize=500&_page=0", "isPartOf" : {"_about" : "http://landregistry.data.gov.uk/doc/region.json", "definition" : "http://landregistry.data.gov.uk/meta/doc/region.json", "hasPart" : "http://landregistry.data.gov.uk/doc/region.json?_pageSize=500&_page=1", "type" : ["http://purl.org/linked-data/api/vocab#ListEndpoint"]}
+    , "items" : [{"_about" : "http://landregistry.data.gov.uk/id/region/kettering", "label" : [{"_value" : "Kettering", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Kettering", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000007408", "http://statistics.data.gov.uk/id/statistical-geography/E07000153"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/northamptonshire", "label" : [{"_value" : "Northamptonshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/king's-lynn-and-west-norfolk", "label" : [{"_value" : "King's Lynn and West Norfolk", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "King's Lynn and West Norfolk", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000007016", "http://statistics.data.gov.uk/id/statistical-geography/E07000146"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/norfolk", "label" : [{"_value" : "Norfolk", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/lancaster", "label" : [{"_value" : "Lancaster", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Lancaster", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000004925", "http://statistics.data.gov.uk/id/statistical-geography/E07000121"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/lewes", "label" : [{"_value" : "Lewes", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Lewes", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000002896", "http://statistics.data.gov.uk/id/statistical-geography/E07000063"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/east-sussex", "label" : [{"_value" : "East Sussex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/lichfield", "label" : [{"_value" : "Lichfield", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Lichfield", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014797", "http://statistics.data.gov.uk/id/statistical-geography/E07000194"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/staffordshire", "label" : [{"_value" : "Staffordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/lincoln", "label" : [{"_value" : "Lincoln", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Lincoln", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000005716", "http://statistics.data.gov.uk/id/statistical-geography/E07000138"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lincolnshire", "label" : [{"_value" : "Lincolnshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/lisburn-and-castlereagh", "label" : [{"_value" : "Lisburn and Castlereagh", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Lisburn and Castlereagh", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/N09000007", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/northern-ireland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/maidstone", "label" : [{"_value" : "Maidstone", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Maidstone", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000018224", "http://statistics.data.gov.uk/id/statistical-geography/E07000110"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/kent", "label" : [{"_value" : "Kent", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/maldon", "label" : [{"_value" : "Maldon", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Maldon", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000019501", "http://statistics.data.gov.uk/id/statistical-geography/E07000074"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/essex", "label" : [{"_value" : "Essex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/malvern-hills", "label" : [{"_value" : "Malvern Hills", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Malvern Hills", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003292", "http://statistics.data.gov.uk/id/statistical-geography/E07000235"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/worcestershire", "label" : [{"_value" : "Worcestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/mansfield", "label" : [{"_value" : "Mansfield", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Mansfield", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000008167", "http://statistics.data.gov.uk/id/statistical-geography/E07000174"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/nottinghamshire", "label" : [{"_value" : "Nottinghamshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/melton", "label" : [{"_value" : "Melton", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Melton", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000023352", "http://statistics.data.gov.uk/id/statistical-geography/E07000133"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/leicestershire", "label" : [{"_value" : "Leicestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/mendip", "label" : [{"_value" : "Mendip", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Mendip", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043462", "http://statistics.data.gov.uk/id/statistical-geography/E07000187"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/somerset", "label" : [{"_value" : "Somerset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/mid-and-east-antrim", "label" : [{"_value" : "Mid and East Antrim", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Mid and East Antrim", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/N09000008", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/northern-ireland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/mid-devon", "label" : [{"_value" : "Mid Devon", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Mid Devon", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000022902", "http://statistics.data.gov.uk/id/statistical-geography/E07000042"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/devon", "label" : [{"_value" : "Devon", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/mid-suffolk", "label" : [{"_value" : "Mid Suffolk", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Mid Suffolk", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000015674", "http://statistics.data.gov.uk/id/statistical-geography/E07000203"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/suffolk", "label" : [{"_value" : "Suffolk", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/mid-sussex", "label" : [{"_value" : "Mid Sussex", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Mid Sussex", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000016211", "http://statistics.data.gov.uk/id/statistical-geography/E07000228"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/west-sussex", "label" : [{"_value" : "West Sussex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/mid-ulster", "label" : [{"_value" : "Mid Ulster", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Mid Ulster", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/N09000009", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/northern-ireland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/mole-valley", "label" : [{"_value" : "Mole Valley", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Mole Valley", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000044474", "http://statistics.data.gov.uk/id/statistical-geography/E07000210"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/new-forest", "label" : [{"_value" : "New Forest", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "New Forest", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000017733", "http://statistics.data.gov.uk/id/statistical-geography/E07000091"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hampshire", "label" : [{"_value" : "Hampshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/newark-and-sherwood", "label" : [{"_value" : "Newark and Sherwood", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Newark and Sherwood", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000008100", "http://statistics.data.gov.uk/id/statistical-geography/E07000175"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/nottinghamshire", "label" : [{"_value" : "Nottinghamshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/newcastle-under-lyme", "label" : [{"_value" : "Newcastle-Under-Lyme", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Newcastle-Under-Lyme", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000015178", "http://statistics.data.gov.uk/id/statistical-geography/E07000195"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/staffordshire", "label" : [{"_value" : "Staffordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/newry-mourne-and-down", "label" : [{"_value" : "Newry Mourne and Down", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Newry Mourne and Down", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/N09000010", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/northern-ireland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-devon", "label" : [{"_value" : "North Devon", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North Devon", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000022933", "http://statistics.data.gov.uk/id/statistical-geography/E07000043"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/devon", "label" : [{"_value" : "Devon", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-dorset", "label" : [{"_value" : "North Dorset", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North Dorset", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014451", "http://statistics.data.gov.uk/id/statistical-geography/E07000050"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/dorset", "label" : [{"_value" : "Dorset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-down-and-ards", "label" : [{"_value" : "North Down and Ards", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North Down and Ards", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/N09000011", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/northern-ireland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-east-derbyshire", "label" : [{"_value" : "North East Derbyshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North East Derbyshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000013391", "http://statistics.data.gov.uk/id/statistical-geography/E07000038"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/derbyshire", "label" : [{"_value" : "Derbyshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-hertfordshire", "label" : [{"_value" : "North Hertfordshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North Hertfordshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003897", "http://statistics.data.gov.uk/id/statistical-geography/E07000099"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hertfordshire", "label" : [{"_value" : "Hertfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-kesteven", "label" : [{"_value" : "North Kesteven", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North Kesteven", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000005542", "http://statistics.data.gov.uk/id/statistical-geography/E07000139"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lincolnshire", "label" : [{"_value" : "Lincolnshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-norfolk", "label" : [{"_value" : "North Norfolk", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North Norfolk", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000007024", "http://statistics.data.gov.uk/id/statistical-geography/E07000147"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/norfolk", "label" : [{"_value" : "Norfolk", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-warwickshire", "label" : [{"_value" : "North Warwickshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North Warwickshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010124", "http://statistics.data.gov.uk/id/statistical-geography/E07000218"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/warwickshire", "label" : [{"_value" : "Warwickshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-west-leicestershire", "label" : [{"_value" : "North West Leicestershire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North West Leicestershire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000023615", "http://statistics.data.gov.uk/id/statistical-geography/E07000134"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/leicestershire", "label" : [{"_value" : "Leicestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/northampton", "label" : [{"_value" : "Northampton", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Northampton", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000007473", "http://statistics.data.gov.uk/id/statistical-geography/E07000154"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/northamptonshire", "label" : [{"_value" : "Northamptonshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/norwich", "label" : [{"_value" : "Norwich", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Norwich", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000006759", "http://statistics.data.gov.uk/id/statistical-geography/E07000148"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/norfolk", "label" : [{"_value" : "Norfolk", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/nuneaton-and-bedworth", "label" : [{"_value" : "Nuneaton and Bedworth", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Nuneaton and Bedworth", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010057", "http://statistics.data.gov.uk/id/statistical-geography/E07000219"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/warwickshire", "label" : [{"_value" : "Warwickshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/oadby-and-wigston", "label" : [{"_value" : "Oadby and Wigston", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Oadby and Wigston", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000023413", "http://statistics.data.gov.uk/id/statistical-geography/E07000135"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/leicestershire", "label" : [{"_value" : "Leicestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/oxford", "label" : [{"_value" : "Oxford", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Oxford", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000008448", "http://statistics.data.gov.uk/id/statistical-geography/E07000178"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/oxfordshire", "label" : [{"_value" : "Oxfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/pendle", "label" : [{"_value" : "Pendle", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Pendle", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043744", "http://statistics.data.gov.uk/id/statistical-geography/E07000122"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/preston", "label" : [{"_value" : "Preston", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Preston", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000004853", "http://statistics.data.gov.uk/id/statistical-geography/E07000123"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/purbeck", "label" : [{"_value" : "Purbeck", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Purbeck", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014363", "http://statistics.data.gov.uk/id/statistical-geography/E07000051"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/dorset", "label" : [{"_value" : "Dorset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/redditch", "label" : [{"_value" : "Redditch", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Redditch", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003085", "http://statistics.data.gov.uk/id/statistical-geography/E07000236"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/worcestershire", "label" : [{"_value" : "Worcestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/reigate-and-banstead", "label" : [{"_value" : "Reigate and Banstead", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Reigate and Banstead", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000013893", "http://statistics.data.gov.uk/id/statistical-geography/E07000211"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/ribble-valley", "label" : [{"_value" : "Ribble Valley", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Ribble Valley", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000004713", "http://statistics.data.gov.uk/id/statistical-geography/E07000124"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/richmondshire", "label" : [{"_value" : "Richmondshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Richmondshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000021986", "http://statistics.data.gov.uk/id/statistical-geography/E07000166"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/north-yorkshire", "label" : [{"_value" : "North Yorkshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/rochford", "label" : [{"_value" : "Rochford", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Rochford", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000019625", "http://statistics.data.gov.uk/id/statistical-geography/E07000075"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/essex", "label" : [{"_value" : "Essex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/rossendale", "label" : [{"_value" : "Rossendale", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Rossendale", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000004572", "http://statistics.data.gov.uk/id/statistical-geography/E07000125"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/rother", "label" : [{"_value" : "Rother", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Rother", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000002852", "http://statistics.data.gov.uk/id/statistical-geography/E07000064"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/east-sussex", "label" : [{"_value" : "East Sussex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/rugby", "label" : [{"_value" : "Rugby", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Rugby", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000009885", "http://statistics.data.gov.uk/id/statistical-geography/E07000220"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/warwickshire", "label" : [{"_value" : "Warwickshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/runnymede", "label" : [{"_value" : "Runnymede", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Runnymede", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014060", "http://statistics.data.gov.uk/id/statistical-geography/E07000212"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/rushcliffe", "label" : [{"_value" : "Rushcliffe", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Rushcliffe", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000007731", "http://statistics.data.gov.uk/id/statistical-geography/E07000176"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/nottinghamshire", "label" : [{"_value" : "Nottinghamshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/rushmoor", "label" : [{"_value" : "Rushmoor", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Rushmoor", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000017275", "http://statistics.data.gov.uk/id/statistical-geography/E07000092"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hampshire", "label" : [{"_value" : "Hampshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/ryedale", "label" : [{"_value" : "Ryedale", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Ryedale", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000021291", "http://statistics.data.gov.uk/id/statistical-geography/E07000167"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/north-yorkshire", "label" : [{"_value" : "North Yorkshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/scarborough", "label" : [{"_value" : "Scarborough", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Scarborough", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000021355", "http://statistics.data.gov.uk/id/statistical-geography/E07000168"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/north-yorkshire", "label" : [{"_value" : "North Yorkshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/sedgemoor", "label" : [{"_value" : "Sedgemoor", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Sedgemoor", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010575", "http://statistics.data.gov.uk/id/statistical-geography/E07000188"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/somerset", "label" : [{"_value" : "Somerset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/selby", "label" : [{"_value" : "Selby", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Selby", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000021055", "http://statistics.data.gov.uk/id/statistical-geography/E07000169"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/north-yorkshire", "label" : [{"_value" : "North Yorkshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/sevenoaks", "label" : [{"_value" : "Sevenoaks", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Sevenoaks", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000018593", "http://statistics.data.gov.uk/id/statistical-geography/E07000111"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/kent", "label" : [{"_value" : "Kent", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/shepway", "label" : [{"_value" : "Shepway", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Shepway", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000018085", "http://statistics.data.gov.uk/id/statistical-geography/E07000112"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/kent", "label" : [{"_value" : "Kent", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-bucks", "label" : [{"_value" : "South Bucks", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Bucks", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011693", "http://statistics.data.gov.uk/id/statistical-geography/E07000006"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/buckinghamshire", "label" : [{"_value" : "Buckinghamshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-cambridgeshire", "label" : [{"_value" : "South Cambridgeshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Cambridgeshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000001303", "http://statistics.data.gov.uk/id/statistical-geography/E07000012"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/cambridgeshire", "label" : [{"_value" : "Cambridgeshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-derbyshire", "label" : [{"_value" : "South Derbyshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Derbyshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000013540", "http://statistics.data.gov.uk/id/statistical-geography/E07000039"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/derbyshire", "label" : [{"_value" : "Derbyshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-hams", "label" : [{"_value" : "South Hams", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Hams", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000022569", "http://statistics.data.gov.uk/id/statistical-geography/E07000044"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/devon", "label" : [{"_value" : "Devon", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-holland", "label" : [{"_value" : "South Holland", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Holland", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000005599", "http://statistics.data.gov.uk/id/statistical-geography/E07000140"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lincolnshire", "label" : [{"_value" : "Lincolnshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-kesteven", "label" : [{"_value" : "South Kesteven", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Kesteven", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000005557", "http://statistics.data.gov.uk/id/statistical-geography/E07000141"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lincolnshire", "label" : [{"_value" : "Lincolnshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-lakeland", "label" : [{"_value" : "South Lakeland", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Lakeland", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000012934", "http://statistics.data.gov.uk/id/statistical-geography/E07000031"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/cumbria", "label" : [{"_value" : "Cumbria", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-norfolk", "label" : [{"_value" : "South Norfolk", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Norfolk", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000006724", "http://statistics.data.gov.uk/id/statistical-geography/E07000149"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/norfolk", "label" : [{"_value" : "Norfolk", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-northamptonshire", "label" : [{"_value" : "South Northamptonshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Northamptonshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000007306", "http://statistics.data.gov.uk/id/statistical-geography/E07000155"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/northamptonshire", "label" : [{"_value" : "Northamptonshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-oxfordshire", "label" : [{"_value" : "South Oxfordshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Oxfordshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000008253", "http://statistics.data.gov.uk/id/statistical-geography/E07000179"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/oxfordshire", "label" : [{"_value" : "Oxfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-ribble", "label" : [{"_value" : "South Ribble", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Ribble", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000004834", "http://statistics.data.gov.uk/id/statistical-geography/E07000126"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-somerset", "label" : [{"_value" : "South Somerset", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Somerset", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010495", "http://statistics.data.gov.uk/id/statistical-geography/E07000189"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/somerset", "label" : [{"_value" : "Somerset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-staffordshire", "label" : [{"_value" : "South Staffordshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Staffordshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014855", "http://statistics.data.gov.uk/id/statistical-geography/E07000196"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/staffordshire", "label" : [{"_value" : "Staffordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/spelthorne", "label" : [{"_value" : "Spelthorne", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Spelthorne", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014169", "http://statistics.data.gov.uk/id/statistical-geography/E07000213"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/st-albans", "label" : [{"_value" : "St Albans", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "St Albans", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003876", "http://statistics.data.gov.uk/id/statistical-geography/E07000240"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hertfordshire", "label" : [{"_value" : "Hertfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/st-edmundsbury", "label" : [{"_value" : "St Edmundsbury", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "St Edmundsbury", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000015647", "http://statistics.data.gov.uk/id/statistical-geography/E07000204"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/suffolk", "label" : [{"_value" : "Suffolk", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/stafford", "label" : [{"_value" : "Stafford", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Stafford", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014892", "http://statistics.data.gov.uk/id/statistical-geography/E07000197"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/staffordshire", "label" : [{"_value" : "Staffordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/staffordshire-moorlands", "label" : [{"_value" : "Staffordshire Moorlands", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Staffordshire Moorlands", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000015068", "http://statistics.data.gov.uk/id/statistical-geography/E07000198"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/staffordshire", "label" : [{"_value" : "Staffordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/stevenage", "label" : [{"_value" : "Stevenage", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Stevenage", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/doc/7000000000003744", "http://statistics.data.gov.uk/id/statistical-geography/E07000243"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hertfordshire", "label" : [{"_value" : "Hertfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/stratford-on-avon", "label" : [{"_value" : "Stratford-on-Avon", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Stratford-on-Avon", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000009943", "http://statistics.data.gov.uk/id/statistical-geography/E07000221"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/warwickshire", "label" : [{"_value" : "Warwickshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/stroud", "label" : [{"_value" : "Stroud", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Stroud", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000020571", "http://statistics.data.gov.uk/id/statistical-geography/E07000082"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/gloucestershire", "label" : [{"_value" : "Gloucestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/suffolk-coastal", "label" : [{"_value" : "Suffolk Coastal", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Suffolk Coastal", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000015508", "http://statistics.data.gov.uk/id/statistical-geography/E07000205"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/suffolk", "label" : [{"_value" : "Suffolk", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/surrey-heath", "label" : [{"_value" : "Surrey Heath", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Surrey Heath", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014064", "http://statistics.data.gov.uk/id/statistical-geography/E07000214"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/swale", "label" : [{"_value" : "Swale", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Swale", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000018242", "http://statistics.data.gov.uk/id/statistical-geography/E07000113"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/kent", "label" : [{"_value" : "Kent", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/tamworth", "label" : [{"_value" : "Tamworth", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Tamworth", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014727", "http://statistics.data.gov.uk/id/statistical-geography/E07000199"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/staffordshire", "label" : [{"_value" : "Staffordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/tandridge", "label" : [{"_value" : "Tandridge", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Tandridge", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000013870", "http://statistics.data.gov.uk/id/statistical-geography/E07000215"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/taunton-deane", "label" : [{"_value" : "Taunton Deane", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Taunton Deane", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010370", "http://statistics.data.gov.uk/id/statistical-geography/E07000190"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/somerset", "label" : [{"_value" : "Somerset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/teignbridge", "label" : [{"_value" : "Teignbridge", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Teignbridge", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000022881", "http://statistics.data.gov.uk/id/statistical-geography/E07000045"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/devon", "label" : [{"_value" : "Devon", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/tendring", "label" : [{"_value" : "Tendring", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Tendring", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000019547", "http://statistics.data.gov.uk/id/statistical-geography/E07000076"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/essex", "label" : [{"_value" : "Essex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/test-valley", "label" : [{"_value" : "Test Valley", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Test Valley", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043511", "http://statistics.data.gov.uk/id/statistical-geography/E07000093"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hampshire", "label" : [{"_value" : "Hampshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/tewkesbury", "label" : [{"_value" : "Tewkesbury", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Tewkesbury", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000020380", "http://statistics.data.gov.uk/id/statistical-geography/E07000083"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/gloucestershire", "label" : [{"_value" : "Gloucestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/thanet", "label" : [{"_value" : "Thanet", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Thanet", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000018130", "http://statistics.data.gov.uk/id/statistical-geography/E07000114"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/kent", "label" : [{"_value" : "Kent", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/three-rivers", "label" : [{"_value" : "Three Rivers", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Three Rivers", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003826", "http://statistics.data.gov.uk/id/statistical-geography/E07000102"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hertfordshire", "label" : [{"_value" : "Hertfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/tonbridge-and-malling", "label" : [{"_value" : "Tonbridge and Malling", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Tonbridge and Malling", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000018343", "http://statistics.data.gov.uk/id/statistical-geography/E07000115"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/kent", "label" : [{"_value" : "Kent", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/torridge", "label" : [{"_value" : "Torridge", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Torridge", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000022970", "http://statistics.data.gov.uk/id/statistical-geography/E07000046"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/devon", "label" : [{"_value" : "Devon", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/tunbridge-wells", "label" : [{"_value" : "Tunbridge Wells", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Tunbridge Wells", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000018650", "http://statistics.data.gov.uk/id/statistical-geography/E07000116"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/kent", "label" : [{"_value" : "Kent", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/uttlesford", "label" : [{"_value" : "Uttlesford", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Uttlesford", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000020033", "http://statistics.data.gov.uk/id/statistical-geography/E07000077"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/essex", "label" : [{"_value" : "Essex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/vale-of-white-horse", "label" : [{"_value" : "Vale of White Horse", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Vale of White Horse", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000008439", "http://statistics.data.gov.uk/id/statistical-geography/E07000180"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/oxfordshire", "label" : [{"_value" : "Oxfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/warwick", "label" : [{"_value" : "Warwick", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Warwick", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043516", "http://statistics.data.gov.uk/id/statistical-geography/E07000222"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/warwickshire", "label" : [{"_value" : "Warwickshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/watford", "label" : [{"_value" : "Watford", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Watford", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003796", "http://statistics.data.gov.uk/id/statistical-geography/E07000103"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hertfordshire", "label" : [{"_value" : "Hertfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/waveney", "label" : [{"_value" : "Waveney", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Waveney", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000015440", "http://statistics.data.gov.uk/id/statistical-geography/E07000206"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/suffolk", "label" : [{"_value" : "Suffolk", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/waverley", "label" : [{"_value" : "Waverley", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Waverley", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014119", "http://statistics.data.gov.uk/id/statistical-geography/E07000216"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/wealden", "label" : [{"_value" : "Wealden", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Wealden", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000002678", "http://statistics.data.gov.uk/id/statistical-geography/E07000065"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/east-sussex", "label" : [{"_value" : "East Sussex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/wellingborough", "label" : [{"_value" : "Wellingborough", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Wellingborough", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000007356", "http://statistics.data.gov.uk/id/statistical-geography/E07000156"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/northamptonshire", "label" : [{"_value" : "Northamptonshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/welwyn-hatfield", "label" : [{"_value" : "Welwyn Hatfield", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Welwyn Hatfield", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003728", "http://statistics.data.gov.uk/id/statistical-geography/E07000241"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hertfordshire", "label" : [{"_value" : "Hertfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-devon", "label" : [{"_value" : "West Devon", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Devon", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000022767", "http://statistics.data.gov.uk/id/statistical-geography/E07000047"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/devon", "label" : [{"_value" : "Devon", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-dorset", "label" : [{"_value" : "West Dorset", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Dorset", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014539", "http://statistics.data.gov.uk/id/statistical-geography/E07000052"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/dorset", "label" : [{"_value" : "Dorset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-lancashire", "label" : [{"_value" : "West Lancashire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Lancashire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000004912", "http://statistics.data.gov.uk/id/statistical-geography/E07000127"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-lindsey", "label" : [{"_value" : "West Lindsey", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Lindsey", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043527", "http://statistics.data.gov.uk/id/statistical-geography/E07000142"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lincolnshire", "label" : [{"_value" : "Lincolnshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-oxfordshire", "label" : [{"_value" : "West Oxfordshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Oxfordshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000008571", "http://statistics.data.gov.uk/id/statistical-geography/E07000181"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/oxfordshire", "label" : [{"_value" : "Oxfordshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-somerset", "label" : [{"_value" : "West Somerset", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Somerset", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010687", "http://statistics.data.gov.uk/id/statistical-geography/E07000191"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/somerset", "label" : [{"_value" : "Somerset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/weymouth-and-portland", "label" : [{"_value" : "Weymouth and Portland", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Weymouth and Portland", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014503", "http://statistics.data.gov.uk/id/statistical-geography/E07000053"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/dorset", "label" : [{"_value" : "Dorset", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/winchester", "label" : [{"_value" : "Winchester", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Winchester", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000017754", "http://statistics.data.gov.uk/id/statistical-geography/E07000094"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/hampshire", "label" : [{"_value" : "Hampshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/woking", "label" : [{"_value" : "Woking", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Woking", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000014192", "http://statistics.data.gov.uk/id/statistical-geography/E07000217"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/worcester", "label" : [{"_value" : "Worcester", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Worcester", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003134", "http://statistics.data.gov.uk/id/statistical-geography/E07000237"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/worcestershire", "label" : [{"_value" : "Worcestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/worthing", "label" : [{"_value" : "Worthing", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Worthing", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000016261", "http://statistics.data.gov.uk/id/statistical-geography/E07000229"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/west-sussex", "label" : [{"_value" : "West Sussex", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/wychavon", "label" : [{"_value" : "Wychavon", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Wychavon", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003127", "http://statistics.data.gov.uk/id/statistical-geography/E07000238"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/worcestershire", "label" : [{"_value" : "Worcestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/wycombe", "label" : [{"_value" : "Wycombe", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Wycombe", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011882", "http://statistics.data.gov.uk/id/statistical-geography/E07000007"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/buckinghamshire", "label" : [{"_value" : "Buckinghamshire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/wyre", "label" : [{"_value" : "Wyre", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Wyre", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000004922", "http://statistics.data.gov.uk/id/statistical-geography/E07000128"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/wyre-forest", "label" : [{"_value" : "Wyre Forest", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Wyre Forest", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000003214", "http://statistics.data.gov.uk/id/statistical-geography/E07000239"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/District", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/worcestershire", "label" : [{"_value" : "Worcestershire", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/east", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/bedford", "label" : [{"_value" : "Bedford", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/cambridgeshire", "label" : [{"_value" : "Cambridgeshire", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/central-bedfordshire", {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-peterborough", "label" : [{"_value" : "City of Peterborough", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/essex", "label" : [{"_value" : "Essex", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/hertfordshire", "label" : [{"_value" : "Hertfordshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/luton", "label" : [{"_value" : "Luton", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/norfolk", "label" : [{"_value" : "Norfolk", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/southend-on-sea", "label" : [{"_value" : "Southend-on-Sea", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/suffolk", "label" : [{"_value" : "Suffolk", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/thurrock", "label" : [{"_value" : "Thurrock", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "East", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "East", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041425", "http://statistics.data.gov.uk/id/statistical-geography/E12000006"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/england-and-wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/east-midlands", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/city-of-derby", "label" : [{"_value" : "City of Derby", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-nottingham", "label" : [{"_value" : "City of Nottingham", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/derbyshire", "label" : [{"_value" : "Derbyshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/leicester", "label" : [{"_value" : "Leicester", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/leicestershire", "label" : [{"_value" : "Leicestershire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/lincolnshire", "label" : [{"_value" : "Lincolnshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/northamptonshire", "label" : [{"_value" : "Northamptonshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/nottinghamshire", "label" : [{"_value" : "Nottinghamshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/rutland", "label" : [{"_value" : "Rutland", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "East Midlands", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "East Midlands", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041423", "http://statistics.data.gov.uk/id/statistical-geography/E12000004"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041423", "http://statistics.data.gov.uk/id/statistical-geography/E12000004"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/england", "http://landregistry.data.gov.uk/id/region/england-and-wales"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/east-of-england", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/bedford", "label" : [{"_value" : "Bedford", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/cambridgeshire", "label" : [{"_value" : "Cambridgeshire", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/central-bedfordshire", {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-peterborough", "label" : [{"_value" : "City of Peterborough", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/essex", "label" : [{"_value" : "Essex", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/hertfordshire", "label" : [{"_value" : "Hertfordshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/luton", "label" : [{"_value" : "Luton", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/norfolk", "label" : [{"_value" : "Norfolk", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/southend-on-sea", "label" : [{"_value" : "Southend-on-Sea", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/suffolk", "label" : [{"_value" : "Suffolk", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/thurrock", "label" : [{"_value" : "Thurrock", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "East of England", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "East of England", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041425", "http://statistics.data.gov.uk/id/statistical-geography/E12000006"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/england"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/england", "contains" : ["http://landregistry.data.gov.uk/id/region/east-midlands", "http://landregistry.data.gov.uk/id/region/east-of-england", "http://landregistry.data.gov.uk/id/region/london", "http://landregistry.data.gov.uk/id/region/north-east", "http://landregistry.data.gov.uk/id/region/north-west", "http://landregistry.data.gov.uk/id/region/south-east", "http://landregistry.data.gov.uk/id/region/south-west", "http://landregistry.data.gov.uk/id/region/west-midlands-region", "http://landregistry.data.gov.uk/id/region/yorkshire-and-the-humber"], "label" : [{"_value" : "England", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "England", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/E92000001", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/england-and-wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/england-and-wales", "contains" : ["http://landregistry.data.gov.uk/id/region/east", "http://landregistry.data.gov.uk/id/region/east-midlands", "http://landregistry.data.gov.uk/id/region/england", "http://landregistry.data.gov.uk/id/region/london", "http://landregistry.data.gov.uk/id/region/north-east", "http://landregistry.data.gov.uk/id/region/north-west", "http://landregistry.data.gov.uk/id/region/south-east", "http://landregistry.data.gov.uk/id/region/south-west", "http://landregistry.data.gov.uk/id/region/wales", "http://landregistry.data.gov.uk/id/region/west-midlands-region", "http://landregistry.data.gov.uk/id/region/yorks-and-humber"], "label" : [{"_value" : "England and Wales", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "England and Wales", "_lang" : "en"}
+      ], "sameAs" : ["http://statistics.data.gov.uk/id/statistical-geography/K04000001"], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/K04000001", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/great-britain"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/great-britain", "contains" : ["http://landregistry.data.gov.uk/id/region/england-and-wales", "http://landregistry.data.gov.uk/id/region/scotland"], "label" : [{"_value" : "Great Britain", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Great Britain", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/K03000001", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/united-kingdom"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/london", "contains" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "London", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "London", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041428", "http://statistics.data.gov.uk/id/statistical-geography/E12000007"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041428", "http://statistics.data.gov.uk/id/statistical-geography/E12000007"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/england", "http://landregistry.data.gov.uk/id/region/england-and-wales"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-east", "contains" : ["http://landregistry.data.gov.uk/id/region/county-durham", {"_about" : "http://landregistry.data.gov.uk/id/region/darlington", "label" : [{"_value" : "Darlington", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/durham", {"_about" : "http://landregistry.data.gov.uk/id/region/hartlepool", "label" : [{"_value" : "Hartlepool", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/middlesbrough", "label" : [{"_value" : "Middlesbrough", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/northumberland", "label" : [{"_value" : "Northumberland", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/redcar-and-cleveland", "label" : [{"_value" : "Redcar and Cleveland", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/stockton-on-tees", "label" : [{"_value" : "Stockton-on-Tees", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/tyne-and-wear"], "label" : [{"_value" : "North East", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North East", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041422", "http://statistics.data.gov.uk/id/statistical-geography/E12000001"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041422", "http://statistics.data.gov.uk/id/statistical-geography/E12000001"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/england", "http://landregistry.data.gov.uk/id/region/england-and-wales"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/north-west", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/blackburn-with-darwen", "label" : [{"_value" : "Blackburn with Darwen", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/blackpool", "label" : [{"_value" : "Blackpool", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/cheshire-east", "label" : [{"_value" : "Cheshire East", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/cheshire-west-and-chester", "label" : [{"_value" : "Cheshire West and Chester", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/cumbria", "label" : [{"_value" : "Cumbria", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/greater-manchester", "label" : [{"_value" : "Greater Manchester", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/halton", "label" : [{"_value" : "Halton", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/lancashire", "label" : [{"_value" : "Lancashire", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/merseyside", {"_about" : "http://landregistry.data.gov.uk/id/region/warrington", "label" : [{"_value" : "Warrington", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "North West", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "North West", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041431", "http://statistics.data.gov.uk/id/statistical-geography/E12000002"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041431", "http://statistics.data.gov.uk/id/statistical-geography/E12000002"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/england", "http://landregistry.data.gov.uk/id/region/england-and-wales"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/northern-ireland", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/antrim-and-newtownabbey", "label" : [{"_value" : "Antrim and Newtownabbey", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/armagh-banbridge-and-craigavon", "label" : [{"_value" : "Armagh Banbridge and Craigavon", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/belfast", "label" : [{"_value" : "Belfast", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/causeway-coast-and-glens", "label" : [{"_value" : "Causeway Coast and Glens", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/derry-and-strabane", "label" : [{"_value" : "Derry and Strabane", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/fermanagh-and-omagh", "label" : [{"_value" : "Fermanagh and Omagh", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/lisburn-and-castlereagh", "http://landregistry.data.gov.uk/id/region/mid-and-east-antrim", "http://landregistry.data.gov.uk/id/region/mid-ulster", "http://landregistry.data.gov.uk/id/region/newry-mourne-and-down", "http://landregistry.data.gov.uk/id/region/north-down-and-ards"], "label" : [{"_value" : "Northern Ireland", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Northern Ireland", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/N92000001", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/united-kingdom"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/scotland", "contains" : ["http://landregistry.data.gov.uk/id/region/aberdeenshire", "http://landregistry.data.gov.uk/id/region/angus", "http://landregistry.data.gov.uk/id/region/argyll-and-bute", "http://landregistry.data.gov.uk/id/region/city-of-aberdeen", "http://landregistry.data.gov.uk/id/region/city-of-dundee", "http://landregistry.data.gov.uk/id/region/city-of-edinburgh", "http://landregistry.data.gov.uk/id/region/city-of-glasgow", "http://landregistry.data.gov.uk/id/region/clackmannanshire", "http://landregistry.data.gov.uk/id/region/dumfries-and-galloway", "http://landregistry.data.gov.uk/id/region/east-ayrshire", "http://landregistry.data.gov.uk/id/region/east-dunbartonshire", "http://landregistry.data.gov.uk/id/region/east-lothian", "http://landregistry.data.gov.uk/id/region/east-renfrewshire", {"_about" : "http://landregistry.data.gov.uk/id/region/falkirk", "label" : [{"_value" : "Falkirk", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/fife", "label" : [{"_value" : "Fife", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/highland", "label" : [{"_value" : "Highland", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/inverclyde", "label" : [{"_value" : "Inverclyde", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/midlothian", "label" : [{"_value" : "Midlothian", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/moray", "label" : [{"_value" : "Moray", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/na-h-eileanan-siar", "label" : [{"_value" : "Na h-Eileanan siar", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-ayrshire", "label" : [{"_value" : "North Ayrshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-lanarkshire", "label" : [{"_value" : "North Lanarkshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/orkney-islands", "label" : [{"_value" : "Orkney Islands", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/perth-and-kinross", "label" : [{"_value" : "Perth and Kinross", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/renfrewshire", "label" : [{"_value" : "Renfrewshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/scottish-borders", "label" : [{"_value" : "Scottish Borders", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/shetland-islands", "label" : [{"_value" : "Shetland Islands", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/south-ayrshire", "label" : [{"_value" : "South Ayrshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/south-lanarkshire", "label" : [{"_value" : "South Lanarkshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/stirling", "label" : [{"_value" : "Stirling", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/west-dunbartonshire", "label" : [{"_value" : "West Dunbartonshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/west-lothian", "label" : [{"_value" : "West Lothian", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "Scotland", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Scotland", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041429", "http://statistics.data.gov.uk/id/statistical-geography/S92000003"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/great-britain"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-east", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/bracknell-forest", "label" : [{"_value" : "Bracknell Forest", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/brighton-and-hove", "label" : [{"_value" : "Brighton and Hove", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/buckinghamshire", "label" : [{"_value" : "Buckinghamshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/east-sussex", "label" : [{"_value" : "East Sussex", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/hampshire", "label" : [{"_value" : "Hampshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/isle-of-wight", "label" : [{"_value" : "Isle of Wight", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/kent", "label" : [{"_value" : "Kent", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/medway", "label" : [{"_value" : "Medway", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/milton-keynes", "label" : [{"_value" : "Milton Keynes", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/oxfordshire", "label" : [{"_value" : "Oxfordshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/portsmouth", "label" : [{"_value" : "Portsmouth", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/reading", "label" : [{"_value" : "Reading", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/slough", "label" : [{"_value" : "Slough", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/southampton", "label" : [{"_value" : "Southampton", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/surrey", "label" : [{"_value" : "Surrey", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/west-berkshire", "label" : [{"_value" : "West Berkshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/west-sussex", "label" : [{"_value" : "West Sussex", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/windsor-and-maidenhead", "label" : [{"_value" : "Windsor and Maidenhead", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/wokingham", "label" : [{"_value" : "Wokingham", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "South East", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South East", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041421", "http://statistics.data.gov.uk/id/statistical-geography/E12000008"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041421", "http://statistics.data.gov.uk/id/statistical-geography/E12000008"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/england", "http://landregistry.data.gov.uk/id/region/england-and-wales"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-west", "contains" : ["http://landregistry.data.gov.uk/id/region/bath-and-north-east-somerset", {"_about" : "http://landregistry.data.gov.uk/id/region/bournemouth", "label" : [{"_value" : "Bournemouth", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-bristol", "label" : [{"_value" : "City of Bristol", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-plymouth", "label" : [{"_value" : "City of Plymouth", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/cornwall", {"_about" : "http://landregistry.data.gov.uk/id/region/devon", "label" : [{"_value" : "Devon", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/dorset", "label" : [{"_value" : "Dorset", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/gloucestershire", "label" : [{"_value" : "Gloucestershire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-somerset", "label" : [{"_value" : "North Somerset", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/poole", "label" : [{"_value" : "Poole", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/somerset", "label" : [{"_value" : "Somerset", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/south-gloucestershire", "label" : [{"_value" : "South Gloucestershire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/swindon", "label" : [{"_value" : "Swindon", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/torbay", "label" : [{"_value" : "Torbay", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/wiltshire", "label" : [{"_value" : "Wiltshire", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "South West", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South West", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041427", "http://statistics.data.gov.uk/id/statistical-geography/E12000009"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041427", "http://statistics.data.gov.uk/id/statistical-geography/E12000009"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/england", "http://landregistry.data.gov.uk/id/region/england-and-wales"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/united-kingdom", "contains" : ["http://landregistry.data.gov.uk/id/region/great-britain", "http://landregistry.data.gov.uk/id/region/northern-ireland"], "label" : [{"_value" : "United Kingdom", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "United Kingdom", "_lang" : "en"}
+      ], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/K02000001", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/ukhpi/Region"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/wales", "contains" : ["http://landregistry.data.gov.uk/id/region/blaenau-gwent", "http://landregistry.data.gov.uk/id/region/bridgend", "http://landregistry.data.gov.uk/id/region/caerphilly", "http://landregistry.data.gov.uk/id/region/cardiff", "http://landregistry.data.gov.uk/id/region/carmarthenshire", "http://landregistry.data.gov.uk/id/region/ceredigion", "http://landregistry.data.gov.uk/id/region/conwy", "http://landregistry.data.gov.uk/id/region/denbighshire", {"_about" : "http://landregistry.data.gov.uk/id/region/flintshire", "label" : [{"_value" : "Flintshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/gwynedd", "label" : [{"_value" : "Gwynedd", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/isle-of-anglesey", "label" : [{"_value" : "Isle of Anglesey", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/merthyr-tydfil", "label" : [{"_value" : "Merthyr Tydfil", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/monmouthshire", "label" : [{"_value" : "Monmouthshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/neath-port-talbot", "label" : [{"_value" : "Neath Port Talbot", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/newport", "label" : [{"_value" : "Newport", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/pembrokeshire", "label" : [{"_value" : "Pembrokeshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/powys", "label" : [{"_value" : "Powys", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/rhondda-cynon-taf", "label" : [{"_value" : "Rhondda Cynon Taf", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/rhondda-cynon-taff", "label" : [{"_value" : "Rhondda Cynon Taff", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/swansea", "label" : [{"_value" : "Swansea", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/the-vale-of-glamorgan", "label" : [{"_value" : "The Vale of Glamorgan", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/torfaen", "label" : [{"_value" : "Torfaen", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/vale-of-glamorgan", "label" : [{"_value" : "Vale of Glamorgan", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/wrexham", "label" : [{"_value" : "Wrexham", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "Wales", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Wales", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041424", "http://statistics.data.gov.uk/id/statistical-geography/W92000004"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041424", "http://statistics.data.gov.uk/id/statistical-geography/W92000004"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/england-and-wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-midlands-region", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/herefordshire", "label" : [{"_value" : "Herefordshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/shropshire", "label" : [{"_value" : "Shropshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/staffordshire", "label" : [{"_value" : "Staffordshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/stoke-on-trent", "label" : [{"_value" : "Stoke-on-Trent", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/telford-and-wrekin", "label" : [{"_value" : "Telford and Wrekin", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/warwickshire", "label" : [{"_value" : "Warwickshire", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/west-midlands", {"_about" : "http://landregistry.data.gov.uk/id/region/worcestershire", "label" : [{"_value" : "Worcestershire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/wrekin", "label" : [{"_value" : "Wrekin", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "West Midlands Region", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Midlands Region", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041426", "http://statistics.data.gov.uk/id/statistical-geography/E12000005"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041426", "http://statistics.data.gov.uk/id/statistical-geography/E12000005"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/england", "http://landregistry.data.gov.uk/id/region/england-and-wales"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/yorks-and-humber", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/city-of-kingston-upon-hull", "label" : [{"_value" : "City of Kingston upon Hull", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/east-riding-of-yorkshire", "label" : [{"_value" : "East Riding of Yorkshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-east-lincolnshire", "label" : [{"_value" : "North East Lincolnshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-lincolnshire", "label" : [{"_value" : "North Lincolnshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-yorkshire", "label" : [{"_value" : "North Yorkshire", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/south-yorkshire", "http://landregistry.data.gov.uk/id/region/west-yorkshire", {"_about" : "http://landregistry.data.gov.uk/id/region/york", "label" : [{"_value" : "York", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "Yorks and Humber", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Yorks and Humber", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041430", "http://statistics.data.gov.uk/id/statistical-geography/E12000003"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/hpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/england-and-wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/yorkshire-and-the-humber", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/city-of-kingston-upon-hull", "label" : [{"_value" : "City of Kingston upon Hull", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/east-riding-of-yorkshire", "label" : [{"_value" : "East Riding of Yorkshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-east-lincolnshire", "label" : [{"_value" : "North East Lincolnshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-lincolnshire", "label" : [{"_value" : "North Lincolnshire", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-yorkshire", "label" : [{"_value" : "North Yorkshire", "_lang" : "en"}
+        ]}
+      , "http://landregistry.data.gov.uk/id/region/south-yorkshire", "http://landregistry.data.gov.uk/id/region/west-yorkshire", {"_about" : "http://landregistry.data.gov.uk/id/region/york", "label" : [{"_value" : "York", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "Yorkshire and The Humber", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Yorkshire and The Humber", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000041430", "http://statistics.data.gov.uk/id/statistical-geography/E12000003"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/EuropeanRegion", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/england"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/greater-london", "contains" : ["http://landregistry.data.gov.uk/id/region/barking-and-dagenham", "http://landregistry.data.gov.uk/id/region/barnet", "http://landregistry.data.gov.uk/id/region/bexley", "http://landregistry.data.gov.uk/id/region/brent", "http://landregistry.data.gov.uk/id/region/bromley", "http://landregistry.data.gov.uk/id/region/camden", "http://landregistry.data.gov.uk/id/region/city-of-westminster", "http://landregistry.data.gov.uk/id/region/croydon", "http://landregistry.data.gov.uk/id/region/ealing", "http://landregistry.data.gov.uk/id/region/enfield", "http://landregistry.data.gov.uk/id/region/greenwich", "http://landregistry.data.gov.uk/id/region/hackney", "http://landregistry.data.gov.uk/id/region/hammersmith-and-fulham", "http://landregistry.data.gov.uk/id/region/haringey", "http://landregistry.data.gov.uk/id/region/harrow", "http://landregistry.data.gov.uk/id/region/havering", "http://landregistry.data.gov.uk/id/region/hillingdon", "http://landregistry.data.gov.uk/id/region/hounslow", "http://landregistry.data.gov.uk/id/region/islington", "http://landregistry.data.gov.uk/id/region/kensington-and-chelsea", "http://landregistry.data.gov.uk/id/region/kingston-upon-thames", "http://landregistry.data.gov.uk/id/region/lambeth", "http://landregistry.data.gov.uk/id/region/lewisham", "http://landregistry.data.gov.uk/id/region/merton", "http://landregistry.data.gov.uk/id/region/newham", "http://landregistry.data.gov.uk/id/region/redbridge", "http://landregistry.data.gov.uk/id/region/richmond-upon-thames", "http://landregistry.data.gov.uk/id/region/southwark", "http://landregistry.data.gov.uk/id/region/sutton", "http://landregistry.data.gov.uk/id/region/tower-hamlets", "http://landregistry.data.gov.uk/id/region/waltham-forest", "http://landregistry.data.gov.uk/id/region/wandsworth"], "label" : [{"_value" : "Greater London", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Greater London", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000041428", "http://statistics.data.gov.uk/id/statistical-geography/E12000007"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/GreaterLondonAuthority", "http://landregistry.data.gov.uk/def/hpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/london"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/barking-and-dagenham", "label" : [{"_value" : "Barking and Dagenham", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Barking and Dagenham", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010949", "http://statistics.data.gov.uk/id/statistical-geography/E09000002"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010949", "http://statistics.data.gov.uk/id/statistical-geography/E09000002"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/barnet", "label" : [{"_value" : "Barnet", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Barnet", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011378", "http://statistics.data.gov.uk/id/statistical-geography/E09000003"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011378", "http://statistics.data.gov.uk/id/statistical-geography/E09000003"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/bexley", "label" : [{"_value" : "Bexley", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Bexley", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010759", "http://statistics.data.gov.uk/id/statistical-geography/E09000004"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010759", "http://statistics.data.gov.uk/id/statistical-geography/E09000004"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/brent", "label" : [{"_value" : "Brent", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Brent", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011447", "http://statistics.data.gov.uk/id/statistical-geography/E09000005"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011447", "http://statistics.data.gov.uk/id/statistical-geography/E09000005"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/bromley", "label" : [{"_value" : "Bromley", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Bromley", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010772", "http://statistics.data.gov.uk/id/statistical-geography/E09000006"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010772", "http://statistics.data.gov.uk/id/statistical-geography/E09000006"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/camden", "label" : [{"_value" : "Camden", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Camden", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011244", "http://statistics.data.gov.uk/id/statistical-geography/E09000007"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011244", "http://statistics.data.gov.uk/id/statistical-geography/E09000007"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-london", "label" : [{"_value" : "City of London", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "City of London", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011105", "http://statistics.data.gov.uk/id/statistical-geography/E09000001"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+    }
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-westminster", "label" : [{"_value" : "City of Westminster", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "City of Westminster", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011164", "http://statistics.data.gov.uk/id/statistical-geography/E09000033"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011164", "http://statistics.data.gov.uk/id/statistical-geography/E09000033"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/croydon", "label" : [{"_value" : "Croydon", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Croydon", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010896", "http://statistics.data.gov.uk/id/statistical-geography/E09000008"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010896", "http://statistics.data.gov.uk/id/statistical-geography/E09000008"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/ealing", "label" : [{"_value" : "Ealing", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Ealing", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011399", "http://statistics.data.gov.uk/id/statistical-geography/E09000009"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011399", "http://statistics.data.gov.uk/id/statistical-geography/E09000009"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/enfield", "label" : [{"_value" : "Enfield", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Enfield", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011329", "http://statistics.data.gov.uk/id/statistical-geography/E09000010"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011329", "http://statistics.data.gov.uk/id/statistical-geography/E09000010"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/greenwich", "label" : [{"_value" : "Greenwich", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Greenwich", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010777", "http://statistics.data.gov.uk/id/statistical-geography/E09000011"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010777", "http://statistics.data.gov.uk/id/statistical-geography/E09000011"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/hackney", "label" : [{"_value" : "Hackney", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Hackney", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011199", "http://statistics.data.gov.uk/id/statistical-geography/E09000012"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011199", "http://statistics.data.gov.uk/id/statistical-geography/E09000012"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/hammersmith-and-fulham", "label" : [{"_value" : "Hammersmith and Fulham", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Hammersmith and Fulham", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011259", "http://statistics.data.gov.uk/id/statistical-geography/E09000013"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011259", "http://statistics.data.gov.uk/id/statistical-geography/E09000013"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/haringey", "label" : [{"_value" : "Haringey", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Haringey", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011290", "http://statistics.data.gov.uk/id/statistical-geography/E09000014"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011290", "http://statistics.data.gov.uk/id/statistical-geography/E09000014"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/harrow", "label" : [{"_value" : "Harrow", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Harrow", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011391", "http://statistics.data.gov.uk/id/statistical-geography/E09000015"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011391", "http://statistics.data.gov.uk/id/statistical-geography/E09000015"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/havering", "label" : [{"_value" : "Havering", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Havering", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010807", "http://statistics.data.gov.uk/id/statistical-geography/E09000016"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010807", "http://statistics.data.gov.uk/id/statistical-geography/E09000016"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/hillingdon", "label" : [{"_value" : "Hillingdon", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Hillingdon", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011539", "http://statistics.data.gov.uk/id/statistical-geography/E09000017"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011539", "http://statistics.data.gov.uk/id/statistical-geography/E09000017"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/hounslow", "label" : [{"_value" : "Hounslow", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Hounslow", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011489", "http://statistics.data.gov.uk/id/statistical-geography/E09000018"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011489", "http://statistics.data.gov.uk/id/statistical-geography/E09000018"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/islington", "label" : [{"_value" : "Islington", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Islington", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011281", "http://statistics.data.gov.uk/id/statistical-geography/E09000019"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011281", "http://statistics.data.gov.uk/id/statistical-geography/E09000019"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/kensington-and-chelsea", "label" : [{"_value" : "Kensington and Chelsea", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Kensington and Chelsea", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011270", "http://statistics.data.gov.uk/id/statistical-geography/E09000020"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011270", "http://statistics.data.gov.uk/id/statistical-geography/E09000020"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/kingston-upon-thames", "label" : [{"_value" : "Kingston upon Thames", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Kingston upon Thames", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011412", "http://statistics.data.gov.uk/id/statistical-geography/E09000021"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011412", "http://statistics.data.gov.uk/id/statistical-geography/E09000021"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/lambeth", "label" : [{"_value" : "Lambeth", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Lambeth", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011144", "http://statistics.data.gov.uk/id/statistical-geography/E09000022"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011144", "http://statistics.data.gov.uk/id/statistical-geography/E09000022"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/lewisham", "label" : [{"_value" : "Lewisham", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Lewisham", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011039", "http://statistics.data.gov.uk/id/statistical-geography/E09000023"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011039", "http://statistics.data.gov.uk/id/statistical-geography/E09000023"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/merton", "label" : [{"_value" : "Merton", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Merton", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010995", "http://statistics.data.gov.uk/id/statistical-geography/E09000024"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010995", "http://statistics.data.gov.uk/id/statistical-geography/E09000024"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/newham", "label" : [{"_value" : "Newham", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Newham", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010929", "http://statistics.data.gov.uk/id/statistical-geography/E09000025"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010929", "http://statistics.data.gov.uk/id/statistical-geography/E09000025"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/redbridge", "label" : [{"_value" : "Redbridge", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Redbridge", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010955", "http://statistics.data.gov.uk/id/statistical-geography/E09000026"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010955", "http://statistics.data.gov.uk/id/statistical-geography/E09000026"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/richmond-upon-thames", "label" : [{"_value" : "Richmond upon Thames", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Richmond upon Thames", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011427", "http://statistics.data.gov.uk/id/statistical-geography/E09000027"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011427", "http://statistics.data.gov.uk/id/statistical-geography/E09000027"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/southwark", "label" : [{"_value" : "Southwark", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Southwark", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011013", "http://statistics.data.gov.uk/id/statistical-geography/E09000028"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011013", "http://statistics.data.gov.uk/id/statistical-geography/E09000028"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/sutton", "label" : [{"_value" : "Sutton", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Sutton", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000010873", "http://statistics.data.gov.uk/id/statistical-geography/E09000029"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000010873", "http://statistics.data.gov.uk/id/statistical-geography/E09000029"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/tower-hamlets", "label" : [{"_value" : "Tower Hamlets", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Tower Hamlets", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011185", "http://statistics.data.gov.uk/id/statistical-geography/E09000030"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011185", "http://statistics.data.gov.uk/id/statistical-geography/E09000030"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/waltham-forest", "label" : [{"_value" : "Waltham Forest", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Waltham Forest", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011213", "http://statistics.data.gov.uk/id/statistical-geography/E09000031"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011213", "http://statistics.data.gov.uk/id/statistical-geography/E09000031"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/outer-london", "label" : [{"_value" : "Outer London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/wandsworth", "label" : [{"_value" : "Wandsworth", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Wandsworth", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000011127", "http://statistics.data.gov.uk/id/statistical-geography/E09000032"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000011127", "http://statistics.data.gov.uk/id/statistical-geography/E09000032"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/greater-london", {"_about" : "http://landregistry.data.gov.uk/id/region/inner-london", "label" : [{"_value" : "Inner London", "_lang" : "en"}
+        ]}
+      ]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/merseyside", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/knowsley", "label" : [{"_value" : "Knowsley", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/liverpool", "label" : [{"_value" : "Liverpool", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/sefton", "label" : [{"_value" : "Sefton", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/st-helens", "label" : [{"_value" : "St Helens", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/wirral", "label" : [{"_value" : "Wirral", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "Merseyside", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Merseyside", "_lang" : "en"}
+      ], "sameAs" : ["http://statistics.data.gov.uk/id/statistical-geography/E11000002"], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/E11000002", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/", "http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrict", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/north-west"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/south-yorkshire", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/barnsley", "label" : [{"_value" : "Barnsley", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/doncaster", "label" : [{"_value" : "Doncaster", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/rotherham", "label" : [{"_value" : "Rotherham", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/sheffield", "label" : [{"_value" : "Sheffield", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "South Yorkshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "South Yorkshire", "_lang" : "en"}
+      ], "sameAs" : ["http://statistics.data.gov.uk/id/statistical-geography/E11000003"], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/E11000003", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/", "http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrict", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/yorks-and-humber", "http://landregistry.data.gov.uk/id/region/yorkshire-and-the-humber"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/tyne-and-wear", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/gateshead", "label" : [{"_value" : "Gateshead", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/newcastle-upon-tyne", "label" : [{"_value" : "Newcastle upon Tyne", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/north-tyneside", "label" : [{"_value" : "North Tyneside", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/south-tyneside", "label" : [{"_value" : "South Tyneside", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/sunderland", "label" : [{"_value" : "Sunderland", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "Tyne and Wear", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Tyne and Wear", "_lang" : "en"}
+      ], "sameAs" : ["http://statistics.data.gov.uk/id/statistical-geography/E11000004"], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/E11000007", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/", "http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrict", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/north-east"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-midlands", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/birmingham", "label" : [{"_value" : "Birmingham", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/coventry", "label" : [{"_value" : "Coventry", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/dudley", "label" : [{"_value" : "Dudley", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/sandwell", "label" : [{"_value" : "Sandwell", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/solihull", "label" : [{"_value" : "Solihull", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/walsall", "label" : [{"_value" : "Walsall", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/wolverhampton", "label" : [{"_value" : "Wolverhampton", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "West Midlands", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Midlands", "_lang" : "en"}
+      ], "sameAs" : ["http://statistics.data.gov.uk/id/statistical-geography/E11000005"], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/E11000005", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/", "http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrict", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/west-midlands-region"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/west-yorkshire", "contains" : [{"_about" : "http://landregistry.data.gov.uk/id/region/bradford", "label" : [{"_value" : "Bradford", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/calderdale", "label" : [{"_value" : "Calderdale", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/kirklees", "label" : [{"_value" : "Kirklees", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/leeds", "label" : [{"_value" : "Leeds", "_lang" : "en"}
+        ]}
+      , {"_about" : "http://landregistry.data.gov.uk/id/region/wakefield", "label" : [{"_value" : "Wakefield", "_lang" : "en"}
+        ]}
+      ], "label" : [{"_value" : "West Yorkshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "West Yorkshire", "_lang" : "en"}
+      ], "sameAs" : ["http://statistics.data.gov.uk/id/statistical-geography/E11000006"], "seeAlso" : "http://statistics.data.gov.uk/id/statistical-geography/E11000006", "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/", "http://data.ordnancesurvey.co.uk/ontology/admingeo/MetropolitanDistrict", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/yorks-and-humber", "http://landregistry.data.gov.uk/id/region/yorkshire-and-the-humber"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/aberdeenshire", "label" : [{"_value" : "Aberdeenshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Aberdeenshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030111", "http://statistics.data.gov.uk/id/statistical-geography/S12000034"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/angus", "label" : [{"_value" : "Angus", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Angus", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030216", "http://statistics.data.gov.uk/id/statistical-geography/S12000041"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/argyll-and-bute", "label" : [{"_value" : "Argyll and Bute", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Argyll and Bute", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030106", "http://statistics.data.gov.uk/id/statistical-geography/S12000035"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/bath-and-north-east-somerset", "label" : [{"_value" : "Bath and North East Somerset", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Bath and North East Somerset", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025554", "http://statistics.data.gov.uk/id/statistical-geography/E06000022"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025554", "http://statistics.data.gov.uk/id/statistical-geography/E06000022"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/south-west"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/blaenau-gwent", "label" : [{"_value" : "Blaenau Gwent", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Blaenau Gwent", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025494", "http://statistics.data.gov.uk/id/statistical-geography/W06000019"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025494", "http://statistics.data.gov.uk/id/statistical-geography/W06000019"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/bridgend", "label" : [{"_value" : "Bridgend", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Bridgend", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025495", "http://statistics.data.gov.uk/id/statistical-geography/W06000013"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025495", "http://statistics.data.gov.uk/id/statistical-geography/W06000013"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/caerphilly", "label" : [{"_value" : "Caerphilly", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Caerphilly", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025496", "http://statistics.data.gov.uk/id/statistical-geography/W06000018"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025496", "http://statistics.data.gov.uk/id/statistical-geography/W06000018"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/cardiff", "label" : [{"_value" : "Cardiff", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Cardiff", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025484", "http://statistics.data.gov.uk/id/statistical-geography/W06000015"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025484", "http://statistics.data.gov.uk/id/statistical-geography/W06000015"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/carmarthenshire", "label" : [{"_value" : "Carmarthenshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Carmarthenshire", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025486", "http://statistics.data.gov.uk/id/statistical-geography/W06000010"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025486", "http://statistics.data.gov.uk/id/statistical-geography/W06000010"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/central-bedfordshire", "label" : [{"_value" : "Central Bedfordshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Central Bedfordshire", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000043870", "http://statistics.data.gov.uk/id/statistical-geography/E06000056"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043870", "http://statistics.data.gov.uk/id/statistical-geography/E06000056"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : ["http://landregistry.data.gov.uk/id/region/east", "http://landregistry.data.gov.uk/id/region/east-of-england"]}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/ceredigion", "label" : [{"_value" : "Ceredigion", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Ceredigion", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025485", "http://statistics.data.gov.uk/id/statistical-geography/W06000008"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025485", "http://statistics.data.gov.uk/id/statistical-geography/W06000008"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-aberdeen", "label" : [{"_value" : "City of Aberdeen", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "City of Aberdeen", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030421", "http://statistics.data.gov.uk/id/statistical-geography/S12000033"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-dundee", "label" : [{"_value" : "City of Dundee", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "City of Dundee", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030215", "http://statistics.data.gov.uk/id/statistical-geography/S12000042"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-edinburgh", "label" : [{"_value" : "City of Edinburgh", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "City of Edinburgh", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030505", "http://statistics.data.gov.uk/id/statistical-geography/S12000036"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/city-of-glasgow", "label" : [{"_value" : "City of Glasgow", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "City of Glasgow", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030631", "http://statistics.data.gov.uk/id/statistical-geography/S12000046"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/clackmannanshire", "label" : [{"_value" : "Clackmannanshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Clackmannanshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030418", "http://statistics.data.gov.uk/id/statistical-geography/S12000005"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/conwy", "label" : [{"_value" : "Conwy", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Conwy", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025493", "http://statistics.data.gov.uk/id/statistical-geography/W06000003"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025493", "http://statistics.data.gov.uk/id/statistical-geography/W06000003"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/cornwall", "label" : [{"_value" : "Cornwall", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Cornwall", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000043750", "http://statistics.data.gov.uk/id/statistical-geography/E06000052"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043750", "http://statistics.data.gov.uk/id/statistical-geography/E06000052"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/south-west"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/county-durham", "label" : [{"_value" : "County Durham", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "County Durham", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043607", "http://statistics.data.gov.uk/id/statistical-geography/E06000047"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/north-east"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/denbighshire", "label" : [{"_value" : "Denbighshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Denbighshire", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000025487", "http://statistics.data.gov.uk/id/statistical-geography/W06000004"], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000025487", "http://statistics.data.gov.uk/id/statistical-geography/W06000004"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/wales"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/dumfries-and-galloway", "label" : [{"_value" : "Dumfries and Galloway", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Dumfries and Galloway", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000031903", "http://statistics.data.gov.uk/id/statistical-geography/S12000006"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/durham", "label" : [{"_value" : "Durham", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "Durham", "_lang" : "en"}
+      ], "sameAs" : ["http://data.ordnancesurvey.co.uk/id/7000000000043607", "http://statistics.data.gov.uk/id/statistical-geography/E06000047"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/hpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/north-east"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/east-ayrshire", "label" : [{"_value" : "East Ayrshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "East Ayrshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000043393", "http://statistics.data.gov.uk/id/statistical-geography/S12000008"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/east-dunbartonshire", "label" : [{"_value" : "East Dunbartonshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "East Dunbartonshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030501", "http://statistics.data.gov.uk/id/statistical-geography/S12000045"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/east-lothian", "label" : [{"_value" : "East Lothian", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "East Lothian", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030509", "http://statistics.data.gov.uk/id/statistical-geography/S12000010"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    , {"_about" : "http://landregistry.data.gov.uk/id/region/east-renfrewshire", "label" : [{"_value" : "East Renfrewshire", "_lang" : "en"}
+      ], "prefLabel" : [{"_value" : "East Renfrewshire", "_lang" : "en"}
+      ], "seeAlso" : ["http://data.ordnancesurvey.co.uk/id/7000000000030846", "http://statistics.data.gov.uk/id/statistical-geography/S12000011"], "type" : ["http://data.ordnancesurvey.co.uk/ontology/admingeo/UnitaryAuthority", "http://landregistry.data.gov.uk/def/ukhpi/Region"], "within" : "http://landregistry.data.gov.uk/id/region/scotland"}
+    ], "itemsPerPage" : 200, "next" : "http://landregistry.data.gov.uk/doc/region.json?_pageSize=500&_page=2", "page" : 1, "prev" : "http://landregistry.data.gov.uk/doc/region.json?_pageSize=500&_page=0", "startIndex" : 201, "totalResults" : 446, "type" : ["http://purl.org/linked-data/api/vocab#Page"]}
+}

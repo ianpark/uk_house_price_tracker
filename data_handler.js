@@ -10,15 +10,18 @@ let region_in_progress = {};
 function convert_data(orig_data) {
     try {
         let tmp = JSON.parse(orig_data);
+        if (tmp.results.bindings.length == 0) {
+            throw 'Failed to obtain any data';
+        }
         // Organise the map to be sorted by datetime
         let data = {};
         tmp.results.bindings.forEach(function(item_dict) {
-            data[item_dict['ukhpi_refMonth'].value] = item_dict;
+            data[item_dict['refMonth'].value] = item_dict;
         });
 
         let output = {};
         tmp.head.vars.forEach(function (item) {
-            if (item === 'item' || item === 'ukhpi_refRegion') return;
+            if (item === 'item' || item === 'refRegion') return;
             output[item] = Array(Object.keys(data).length);
         });
 
@@ -26,15 +29,18 @@ function convert_data(orig_data) {
         Object.keys(data).sort().forEach(function(key) {
             let monthly_data = data[key]
             for (let type in monthly_data) {
-                if (type === 'item' || type === 'ukhpi_refRegion') continue;
-                output[type][index] = parseInt(monthly_data[type].value);
+                if (type === 'item' || type === 'refRegion') continue;
+                if (type === 'refMonth') {
+                    output[type][index] = monthly_data[type].value;
+                } else {
+                    output[type][index] = parseInt(monthly_data[type].value);
+                }
             }
             index++;
         });
         return output;
     } catch (err) {
-        console.log(err);
-        throw 'Failed to convert data from Land Registry';
+        throw 'Failed to convert data from Land Registry: ' + err;
     }
 }
 
@@ -67,55 +73,55 @@ module.exports = {
 { head: [],
   data: 
    { item: [],
-     ukhpi_refMonth: [],
-     ukhpi_refRegion: [],
-     ukhpi_averagePrice: [],
-     ukhpi_averagePriceCash: [],
-     ukhpi_averagePriceDetached: [],
-     ukhpi_averagePriceExistingProperty: [],
-     ukhpi_averagePriceFirstTimeBuyer: [],
-     ukhpi_averagePriceFlatMaisonette: [],
-     ukhpi_averagePriceFormerOwnerOccupier: [],
-     ukhpi_averagePriceMortgage: [],
-     ukhpi_averagePriceNewBuild: [],
-     ukhpi_averagePriceSA: [],
-     ukhpi_averagePriceSemiDetached: [],
-     ukhpi_averagePriceTerraced: [],
-     ukhpi_housePriceIndex: [],
-     ukhpi_housePriceIndexCash: [],
-     ukhpi_housePriceIndexDetached: [],
-     ukhpi_housePriceIndexExistingProperty: [],
-     ukhpi_housePriceIndexFirstTimeBuyer: [],
-     ukhpi_housePriceIndexFlatMaisonette: [],
-     ukhpi_housePriceIndexFormerOwnerOccupier: [],
-     ukhpi_housePriceIndexMortgage: [],
-     ukhpi_housePriceIndexNewBuild: [],
-     ukhpi_housePriceIndexSA: [],
-     ukhpi_housePriceIndexSemiDetached: [],
-     ukhpi_housePriceIndexTerraced: [],
-     ukhpi_percentageAnnualChange: [],
-     ukhpi_percentageAnnualChangeCash: [],
-     ukhpi_percentageAnnualChangeDetached: [],
-     ukhpi_percentageAnnualChangeExistingProperty: [],
-     ukhpi_percentageAnnualChangeFirstTimeBuyer: [],
-     ukhpi_percentageAnnualChangeFlatMaisonette: [],
-     ukhpi_percentageAnnualChangeFormerOwnerOccupier: [],
-     ukhpi_percentageAnnualChangeMortgage: [],
-     ukhpi_percentageAnnualChangeNewBuild: [],
-     ukhpi_percentageAnnualChangeSemiDetached: [],
-     ukhpi_percentageAnnualChangeTerraced: [],
-     ukhpi_percentageChange: [],
-     ukhpi_percentageChangeCash: [],
-     ukhpi_percentageChangeDetached: [],
-     ukhpi_percentageChangeExistingProperty: [],
-     ukhpi_percentageChangeFirstTimeBuyer: [],
-     ukhpi_percentageChangeFlatMaisonette: [],
-     ukhpi_percentageChangeFormerOwnerOccupier: [],
-     ukhpi_percentageChangeMortgage: [],
-     ukhpi_percentageChangeNewBuild: [],
-     ukhpi_percentageChangeSemiDetached: [],
-     ukhpi_percentageChangeTerraced: [],
-     ukhpi_refPeriodDuration: [],
-     ukhpi_refPeriodStart: [],
-     ukhpi_salesVolume: [] } }
+     refMonth: [],
+     refRegion: [],
+     averagePrice: [],
+     averagePriceCash: [],
+     averagePriceDetached: [],
+     averagePriceExistingProperty: [],
+     averagePriceFirstTimeBuyer: [],
+     averagePriceFlatMaisonette: [],
+     averagePriceFormerOwnerOccupier: [],
+     averagePriceMortgage: [],
+     averagePriceNewBuild: [],
+     averagePriceSA: [],
+     averagePriceSemiDetached: [],
+     averagePriceTerraced: [],
+     housePriceIndex: [],
+     housePriceIndexCash: [],
+     housePriceIndexDetached: [],
+     housePriceIndexExistingProperty: [],
+     housePriceIndexFirstTimeBuyer: [],
+     housePriceIndexFlatMaisonette: [],
+     housePriceIndexFormerOwnerOccupier: [],
+     housePriceIndexMortgage: [],
+     housePriceIndexNewBuild: [],
+     housePriceIndexSA: [],
+     housePriceIndexSemiDetached: [],
+     housePriceIndexTerraced: [],
+     percentageAnnualChange: [],
+     percentageAnnualChangeCash: [],
+     percentageAnnualChangeDetached: [],
+     percentageAnnualChangeExistingProperty: [],
+     percentageAnnualChangeFirstTimeBuyer: [],
+     percentageAnnualChangeFlatMaisonette: [],
+     percentageAnnualChangeFormerOwnerOccupier: [],
+     percentageAnnualChangeMortgage: [],
+     percentageAnnualChangeNewBuild: [],
+     percentageAnnualChangeSemiDetached: [],
+     percentageAnnualChangeTerraced: [],
+     percentageChange: [],
+     percentageChangeCash: [],
+     percentageChangeDetached: [],
+     percentageChangeExistingProperty: [],
+     percentageChangeFirstTimeBuyer: [],
+     percentageChangeFlatMaisonette: [],
+     percentageChangeFormerOwnerOccupier: [],
+     percentageChangeMortgage: [],
+     percentageChangeNewBuild: [],
+     percentageChangeSemiDetached: [],
+     percentageChangeTerraced: [],
+     refPeriodDuration: [],
+     refPeriodStart: [],
+     salesVolume: [] } }
      */
