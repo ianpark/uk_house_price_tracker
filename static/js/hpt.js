@@ -16,7 +16,7 @@ function load_region_data(region_name) {
 
 function draw_graph() {
     extra_app.showPleaseWait();
-    var graph_detail = {region: $('#region_name').val().split(' '),
+    var graph_detail = {region: selected_region,
                         data: $('#param_name').val().split(' '),
                         period: $('#period').val().split(' ')
                        };
@@ -119,7 +119,7 @@ function render_graph(detail) {
 }
 
 
-
+// On load
 $(function() {
     // Get the <datalist> and <input> elements.
     var dataList = document.getElementById('region_search_data');
@@ -181,6 +181,46 @@ $(function() {
             $('#region_name').val(selected_region.join(' '));
         }
     });
+
+    function delete_from_region_list(val) {
+        var idx = selected_region.indexOf(val);
+        if (idx > -1) {
+            selected_region.splice(idx, 1);
+            return true;
+        }
+        return false;
+    }
+
+    function add_to_region_list(val) {
+        var idx = selected_region.indexOf(val);
+        if (idx == -1) {
+            selected_region.push(val);
+            return true;
+        }
+        return false;
+    }
+    function display_selected_region() {
+        $('#selected_region').html('');
+        selected_region.forEach(function(val) {
+            var element_id = 'region_' + val + '_selected';
+            item = $("<span class='label label-success' style='margin-right: 2px'>" + val +  "</span>");
+            item.attr("id", element_id);
+            item.click(function() {
+                delete_from_region_list(val);
+                $('#' + element_id).remove();
+            });
+            $('#selected_region').append(item); 
+        });
+    }
+    $('#region_search').on('keypress',function (e) {
+        if (e.which == 13) {
+            if (add_to_region_list($('#region_search').val())) {
+                display_selected_region();
+            }
+            $('#region_search').val('');
+        }
+    });
+    display_selected_region();
 });
 
 /*
