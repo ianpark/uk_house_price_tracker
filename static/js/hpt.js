@@ -89,6 +89,7 @@ function render_graph(detail) {
         /*This is how to customize the way the labels look :) */
         tooltipTemplate: "<%if (label){%><%=label%>: <%}%>$<%= value %>",
         label: 'test',
+        responsive: true,
         maintainAspectRatio: false,
         title: {
             display: true,
@@ -172,15 +173,6 @@ $(function() {
 
         };
     })();
-
-    $('#region_name').val(selected_region.join(' '));
-    $("#region_search").keyup(function(event){
-        if(event.keyCode == 13){
-            selected_region.push($('#region_search').val());
-            $('#region_search').val('');
-            $('#region_name').val(selected_region.join(' '));
-        }
-    });
 
     function delete_from_region_list(val) {
         var idx = selected_region.indexOf(val);
