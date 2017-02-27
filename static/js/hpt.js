@@ -160,7 +160,6 @@ $(function() {
     request.open('GET', 'region.json', true);
     request.send();
 
-
     function delete_from_region_list(val) {
         var idx = selected_region.indexOf(val);
         if (idx > -1) {
