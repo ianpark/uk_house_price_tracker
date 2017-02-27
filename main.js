@@ -21,7 +21,7 @@ app.get("/region/:name", function(req, res) {
       .catch(function(error) {
             console.log('Get ' + region_name + ': ' + error);
             res.status(400)
-            .json({error: 'no data'})
+            .json({region_name: region_name, error: 'no data'})
       })
       .done();
 });

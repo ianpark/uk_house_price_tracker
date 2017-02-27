@@ -1,5 +1,35 @@
 var region_data = {};
-var selected_region = ['london', 'manchester', 'winchester', 'richmond-upon-thames'];
+var selected_region = ['london', 'richmond-upon-thames', 'hampshire'];
+var data_options = {
+    'averagePrice': [
+        'Cash',
+        'ExistingProperty',
+        'FirstTimeBuyer',
+        'FormerOwnerOccupier',
+        'Mortgage',
+        'NewBuild',
+        'SA'
+    ],
+    'housePriceIndex': [
+        'Cash',
+        'ExistingProperty',
+        'FirstTimeBuyer',
+        'FormerOwnerOccupier',
+        'Mortgage',
+        'NewBuild',
+        'SA'
+    ],
+    'percentageAnnualChange': [
+        'Cash',
+        'ExistingProperty',
+        'FirstTimeBuyer',
+        'FormerOwnerOccupier',
+        'Mortgage',
+        'NewBuild',
+        'SA'
+    ],
+    'salesVolume': []
+}
 
 function load_region_data(region_name) {
     if (!region_data.hasOwnProperty(region_name)) {
@@ -26,7 +56,12 @@ function draw_graph() {
         }, 500);
         
     }).catch(function(err) {
-        $('#in_progress_dlg').find('.modal-body').text('Faile to read data from the server');
+        $('#in_progress_dlg').modal('hide');
+        var message = 'Failed to read data from the server';
+        if (err.responseJSON) {}
+            message += "\n: No region data for " + err.responseJSON.region_name;
+        $('#failure_dlg').find('.modal-body').text(message);
+        $('#failure_dlg').modal('show');
     });
 }
 
@@ -56,11 +91,15 @@ function getColour(str) {
 }
 
 function render_graph(detail) {
+    Chart.defaults.global.tooltips.enabled = true;
+    Chart.defaults.global.tooltips.intersect = false;
+    Chart.defaults.global.tooltips.position = 'average';
+    Chart.defaults.global.tooltips.mode = 'nearest';
+    Chart.defaults.global.tooltips.backgroundColor = 'rgba(0,0,0,0.5)'
     Chart.defaults.global.elements.point.radius = 0;
     Chart.defaults.global.elements.line.borderWidth = 2;
     Chart.defaults.global.elements.line.tension = 0;
     Chart.defaults.global.elements.line.fill = false;
-    Chart.defaults.global.elements.line.tension = 0;
 
     var chart_data_set = [];
     var idx_begin = region_data[detail.region[0]].refMonth.indexOf(detail.period[0]);
@@ -71,6 +110,7 @@ function render_graph(detail) {
             chart_data_set.push({
                 label: label,
                 borderColor: getColour(label),
+                backgroundColor: getColour(label),
                 data: region_data[region_name][data_name].slice(idx_begin, idx_end)
             });
         });
@@ -84,7 +124,13 @@ function render_graph(detail) {
     // create the options
     options = {
         fill: false,
-        scaleBeginAtZero: true,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        },
         /*This is how to customize the way the labels look :) */
         tooltipTemplate: "<%if (label){%><%=label%>: <%}%>$<%= value %>",
         label: 'test',
@@ -93,29 +139,39 @@ function render_graph(detail) {
         title: {
             display: true,
             text: 'House Price Tracker'
+        },
+        events: ['click', 'mousemove'],
+        onClick: function(e) {
+            console.log(e);
+        },
+        hover: {
+            onHover: function(e) {
+                this.chart.ctx.layerX = e.layerX;
+            },
+        },
+        animation: {
+            duration: 2000,
+            onProgress: function(animation) {
+                var x_pos = this.chart.ctx.layerX;
+                if (x_pos > this.chartArea.left && x_pos < this.chartArea.right) {
+                    this.chart.ctx.beginPath();
+                    this.chart.ctx.moveTo(this.chart.ctx.layerX, this.chartArea.top);
+                    this.chart.ctx.setLineDash([3, 3]);
+                    this.chart.ctx.strokeStyle = '#888888';
+                    this.chart.ctx.lineTo(this.chart.ctx.layerX, this.chartArea.bottom);
+                    this.chart.ctx.stroke();
+                    this.chart.ctx.setLineDash([]);
+                }
+            },
         }
     };
     // get line chart canvas
-    hpc_chart = document.getElementById('hpc_chart').getContext('2d')
     var ctx = document.getElementById("hpc_chart");
     var hpc_chart = new Chart(ctx, {
         type: 'line',
         data: chart_data,
         options: options
     });
-    /*
-    rs = new RangeSliderChart({
-
-        chartData: chart_data,
-        chartOpts: options,
-        chartType: 'line',
-        chartCTX: document.getElementById('hpc_chart').getContext('2d'),
-
-        class: 'my-chart-ranger',
-
-        initial: [3, 10]
-    });
-    */
 }
 
 
@@ -145,7 +201,7 @@ $(function() {
                 });
 
                 // Update the placeholder text.
-                input.placeholder = "e.g. richmond-upon-thames, and press enter key to append.";
+                input.placeholder = "Local authorities, UK regions or counties. Press enter key to add.";
             } else {
                 // An error occured :(
                 input.placeholder = "Couldn't load datalist options :(";
@@ -203,6 +259,28 @@ $(function() {
     display_selected_region();
 });
 
+/*
+averagePrice
+
+housePriceIndex
+
+percentageAnnual
+
+salesVolume
+
+
+
+Cash
+ExistingProperty
+FirstTimeBuyer
+FormerOwnerOccupier
+Mortgage
+NewBuild
+SA
+
+All Property Types
+FlatMaisonette Terraced SemiDetached Detached
+*/
 /*
 { head: [],
   data: 

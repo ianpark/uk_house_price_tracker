@@ -12,6 +12,7 @@
 
         <script src="/js/q.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
+        <script src="/js/chartjs-plugin-annotation.min.js"></script>
         <script src="/js/RangeSlider-minimal.min.js"></script>
     </head>
     <body>
@@ -45,18 +46,18 @@
                     <input type="text" id="region_search" list="region_search_data" placeholder="e.g. richmond-upon-thames, and press enter key to append.">
                     <datalist id="region_search_data"></datalist>
                     <h4><div id="selected_region"></div></h4>
-                    
-                    <input id="period" class="form-control" value="2005-05 2017-01"></input>
-                    <button onclick="draw_graph()" class="btn btn-lg btn-default">Go</button>
                     <input id="param_name" class="form-control" value="averagePrice averagePriceFirstTimeBuyer"></input>
+                    <input id="period" class="form-control" value="2005-05 2017-01"></input>
+                    
+                    <button onclick="draw_graph()" class="btn btn-lg btn-default">Go</button>
             </div>
-            <div class="row" style="height: 300px;">
+            <div class="row" style="height: 400px;">
                 <canvas id="hpc_chart"></canvas>
             </div>
         </div>
         <!-- Data loading modal -->
         <div id="in_progress_dlg" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
-            <div class="modal-dialog">
+            <div class="modal-dialog" style="width: 300px">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -67,6 +68,18 @@
                             <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
                             </div>
                         </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="failure_dlg" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog" style="width: 400px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Loading data...</h4>
+                    </div>
+                    <div id="modal_message_body" class="modal-body">
                     </div>
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
