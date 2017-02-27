@@ -1,5 +1,6 @@
 var region_data = {};
 var selected_region = ['london', 'richmond-upon-thames', 'hampshire'];
+var selected_option = ['averagePrice', 'housePriceIndexCash', 'averagePriceMortgage'];
 var data_options = {
     'averagePrice': [
         'Cash',
@@ -31,6 +32,56 @@ var data_options = {
     'salesVolume': []
 }
 
+var dummy_options = ['averagePrice',
+'averagePriceCash',
+'averagePriceDetached',
+'averagePriceExistingProperty',
+'averagePriceFirstTimeBuyer',
+'averagePriceFlatMaisonette',
+'averagePriceFormerOwnerOccupier',
+'averagePriceMortgage',
+'averagePriceNewBuild',
+'averagePriceSA',
+'averagePriceSemiDetached',
+'averagePriceTerraced',
+'housePriceIndex',
+'housePriceIndexCash',
+'housePriceIndexDetached',
+'housePriceIndexExistingProperty',
+'housePriceIndexFirstTimeBuyer',
+'housePriceIndexFlatMaisonette',
+'housePriceIndexFormerOwnerOccupier',
+'housePriceIndexMortgage',
+'housePriceIndexNewBuild',
+'housePriceIndexSA',
+'housePriceIndexSemiDetached',
+'housePriceIndexTerraced',
+'percentageAnnualChange',
+'percentageAnnualChangeCash',
+'percentageAnnualChangeDetached',
+'percentageAnnualChangeExistingProperty',
+'percentageAnnualChangeFirstTimeBuyer',
+'percentageAnnualChangeFlatMaisonette',
+'percentageAnnualChangeFormerOwnerOccupier',
+'percentageAnnualChangeMortgage',
+'percentageAnnualChangeNewBuild',
+'percentageAnnualChangeSemiDetached',
+'percentageAnnualChangeTerraced',
+'percentageChange',
+'percentageChangeCash',
+'percentageChangeDetached',
+'percentageChangeExistingProperty',
+'percentageChangeFirstTimeBuyer',
+'percentageChangeFlatMaisonette',
+'percentageChangeFormerOwnerOccupier',
+'percentageChangeMortgage',
+'percentageChangeNewBuild',
+'percentageChangeSemiDetached',
+'percentageChangeTerraced',
+'refPeriodDuration',
+'refPeriodStart',
+'salesVolume'];
+
 function load_region_data(region_name) {
     if (!region_data.hasOwnProperty(region_name)) {
         console.log('Load data for ' + region_name);
@@ -45,7 +96,7 @@ function load_region_data(region_name) {
 function draw_graph() {
     $('#in_progress_dlg').modal('show');
     var graph_detail = {region: selected_region,
-                        data: $('#param_name').val().split(' '),
+                        data: selected_option,
                         period: $('#period').val().split(' ')
                        };
     Q.all(graph_detail.region.map(load_region_data))
@@ -97,7 +148,7 @@ function render_graph(detail) {
     Chart.defaults.global.tooltips.mode = 'nearest';
     Chart.defaults.global.tooltips.backgroundColor = 'rgba(0,0,0,0.5)'
     Chart.defaults.global.elements.point.radius = 0;
-    Chart.defaults.global.elements.line.borderWidth = 2;
+    Chart.defaults.global.elements.line.borderWidth = 1;
     Chart.defaults.global.elements.line.tension = 0;
     Chart.defaults.global.elements.line.fill = false;
 
@@ -215,7 +266,7 @@ $(function() {
     // Set up and make the request.
     request.open('GET', 'region.json', true);
     request.send();
-
+    // Display Selected Region
     function delete_from_region_list(val) {
         var idx = selected_region.indexOf(val);
         if (idx > -1) {
@@ -224,7 +275,7 @@ $(function() {
         }
         return false;
     }
-
+    // Display Selected Region
     function add_to_region_list(val) {
         var idx = selected_region.indexOf(val);
         if (idx == -1) {
@@ -257,6 +308,52 @@ $(function() {
         }
     });
     display_selected_region();
+
+    // Display selected options
+    function add_to_option_list(val) {
+        var idx = selected_option.indexOf(val);
+        if (idx == -1) {
+            selected_option.push(val);
+            return true;
+        }
+        return false;
+    }
+    function delete_from_option_list(val) {
+        var idx = selected_option.indexOf(val);
+        if (idx > -1) {
+            selected_option.splice(idx, 1);
+            return true;
+        }
+        return false;
+    }
+    function display_options() {
+        $('#option_container').html('');
+        dummy_options.forEach(function(val) {
+            var element_id = 'option_' + val + '_selected';
+            
+            item = $("<span class='label label-primary' style='margin-right: 2px'>" + val +  "</span>");
+            item.css('margin-right', '2px');
+            item.css('margin-bottom', '2px');
+            item.css('display', 'inline-block');
+            item.css('font-weight', '400');
+            item.attr("id", element_id);
+            if (selected_option.indexOf(val) != -1) {
+                item.on('click', function() {
+                    delete_from_option_list(val);
+                    display_options();
+                });           
+            } else {
+                item.css('background-color', '#BBBBBB');
+                item.on('click', function() {
+                    add_to_option_list(val);
+                    display_options();
+                });
+            }
+
+            $('#option_container').append(item); 
+        });
+    }
+    display_options();
 });
 
 /*

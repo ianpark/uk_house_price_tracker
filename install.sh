@@ -5,3 +5,4 @@ sudo apt-get install -y nodejs
 npm install
 
 sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 7540
+mkdir data
