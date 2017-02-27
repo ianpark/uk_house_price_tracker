@@ -1,7 +1,5 @@
 var region_data = {};
-var selected_region = ['london', 'manchester', 'winchester'];
-
-var extra_app;
+var selected_region = ['london', 'manchester', 'winchester', 'richmond-upon-thames'];
 
 function load_region_data(region_name) {
     if (!region_data.hasOwnProperty(region_name)) {
@@ -15,19 +13,20 @@ function load_region_data(region_name) {
 }
 
 function draw_graph() {
-    extra_app.showPleaseWait();
+    $('#in_progress_dlg').modal('show');
     var graph_detail = {region: selected_region,
                         data: $('#param_name').val().split(' '),
                         period: $('#period').val().split(' ')
                        };
     Q.all(graph_detail.region.map(load_region_data))
     .then(function() {
-        render_graph(graph_detail);
+        setTimeout(function() {
+            $('#in_progress_dlg').modal('hide');
+            render_graph(graph_detail);
+        }, 500);
+        
     }).catch(function(err) {
-        console.log(err);
-        alert('Faile to read data from the server');
-    }).fin(function() {
-        extra_app.hidePleaseWait();
+        $('#in_progress_dlg').find('.modal-body').text('Faile to read data from the server');
     });
 }
 
@@ -89,6 +88,7 @@ function render_graph(detail) {
         /*This is how to customize the way the labels look :) */
         tooltipTemplate: "<%if (label){%><%=label%>: <%}%>$<%= value %>",
         label: 'test',
+        responsive: true,
         maintainAspectRatio: false,
         title: {
             display: true,
@@ -145,7 +145,7 @@ $(function() {
                 });
 
                 // Update the placeholder text.
-                input.placeholder = "e.g. richmond-upon-thames";
+                input.placeholder = "e.g. richmond-upon-thames, and press enter key to append.";
             } else {
                 // An error occured :(
                 input.placeholder = "Couldn't load datalist options :(";
@@ -160,27 +160,6 @@ $(function() {
     request.open('GET', 'region.json', true);
     request.send();
 
-    extra_app = extra_app || (function () {
-        var pleaseWaitDiv = $('<div class="modal hide" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false"><div class="modal-header"><h1>Processing...</h1></div><div class="modal-body"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div></div>');
-        return {
-            showPleaseWait: function() {
-                pleaseWaitDiv.modal('show');
-            },
-            hidePleaseWait: function () {
-                pleaseWaitDiv.modal('hide');
-            },
-
-        };
-    })();
-
-    $('#region_name').val(selected_region.join(' '));
-    $("#region_search").keyup(function(event){
-        if(event.keyCode == 13){
-            selected_region.push($('#region_search').val());
-            $('#region_search').val('');
-            $('#region_name').val(selected_region.join(' '));
-        }
-    });
 
     function delete_from_region_list(val) {
         var idx = selected_region.indexOf(val);
@@ -203,7 +182,9 @@ $(function() {
         $('#selected_region').html('');
         selected_region.forEach(function(val) {
             var element_id = 'region_' + val + '_selected';
-            item = $("<span class='label label-success' style='margin-right: 2px'>" + val +  "</span>");
+            item = $("<span class='label label-success' style='margin-right: 2px'>" + val +  " <span class='glyphicon glyphicon-remove'></span></span>");
+            item.css('margin-right', '2px');
+            item.css('display', 'inline-block');
             item.attr("id", element_id);
             item.click(function() {
                 delete_from_region_list(val);
