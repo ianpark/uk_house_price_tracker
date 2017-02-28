@@ -105,8 +105,10 @@ function draw_graph() {
     .then(function() {
         setTimeout(function() {
             $('#in_progress_dlg').modal('hide');
-            render_graph(graph_detail);
-        }, 500);
+            setTimeout(function() {
+                render_graph(graph_detail);
+            }, 500);
+        }, 200);
         
     }).catch(function(err) {
         $('#in_progress_dlg').modal('hide');
@@ -220,20 +222,23 @@ function render_graph(detail) {
     };
     // Get chart panel
     var chart_id = "chart_palen_" + chart_id_sequence++;
-    var chart_panel = $("<div id='" + chart_id + "' class='row chart-panel' style='height: 500px;'></div>");
+    var chart_panel = $("<div id='" + chart_id + "' class='row chart-panel'></div>");
     var chart_panel_head = $("<div class='chart-panel-head'> " + detail.region.join(' ') + " / " +
                          detail.data.join(' ') + " / " + detail.period.join('_') + "</div>");
     var close_icon = $("<span class='glyphicon glyphicon-remove-sign' aria-hidden='true' style='color: #992222;'></span>");
     close_icon.on('click', function () {
-        $('#'+chart_id).remove()
+        $('#'+chart_id).slideUp("fast", function() {
+            $('#'+chart_id).remove();
+        });
     });
     chart_panel_head.prepend(close_icon);
     chart_panel.append(chart_panel_head);
     // Create a new canvas and add to the panel to activate it
     var new_canvas = $('<canvas></canvas>');
-    chart_panel.append(new_canvas);
-    $('#chart-ground').prepend(chart_panel);
-    
+    chart_panel.append($("<div style='height: 400px;'></div>").append(new_canvas));
+    chart_panel.prependTo($('#chart-ground')).slideDown("fast");
+    //$('#chart-ground').prepend(chart_panel);
+
     var hpc_chart = new Chart(new_canvas, {
         type: 'line',
         data: chart_data,

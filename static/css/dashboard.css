@@ -144,6 +144,7 @@ input {
 }
 
 .chart-panel {
+  display: none;
   padding: 5px;
   margin-bottom: 10px;
   background-color: #ffffff;
