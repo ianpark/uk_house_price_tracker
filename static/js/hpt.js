@@ -1,6 +1,6 @@
 var region_data = {};
-var selected_region = ['london', 'richmond-upon-thames', 'hampshire'];
-var selected_option = ['salesVolume'];
+var selected_region = ['richmond-upon-thames'];
+var selected_option = ['averagePrice'];
 var data_options = {
     'averagePrice': [
         'Cash',
@@ -78,9 +78,16 @@ var dummy_options = ['averagePrice',
 'percentageChangeNewBuild',
 'percentageChangeSemiDetached',
 'percentageChangeTerraced',
-'refPeriodDuration',
-'refPeriodStart',
 'salesVolume'];
+
+
+function getIndexFromList(str, prefixes) {
+    var i = prefixes.length;
+    while (i-- > 0)
+        if (str.lastIndexOf(prefixes[i], 0) === 0)
+            return i;
+    return 0;
+}
 
 var chart_id_sequence = 0;
 
@@ -156,20 +163,56 @@ function render_graph(detail) {
     Chart.defaults.global.elements.line.tension = 0;
     Chart.defaults.global.elements.line.fill = false;
 
+    var second_axis_prefix = ['averagePrice', 'housePriceIndex', 'percentage','sales'];
+    var axis_need = [false,false,false,false];
+    var formatting_function = [
+        function(value, index, values) {
+            return "£" + (value > 999 ? (value/1000).toFixed(0) + 'k' : value);
+        },
+        function(value, index, values) {
+            return value;
+        },
+        function(value, index, values) {
+            return value + "%";
+        },
+        function(value, index, values) {
+            return value;
+        }
+    ]
     var chart_data_set = [];
     var idx_begin = region_data[detail.region[0]].refMonth.indexOf(detail.period[0]);
     var idx_end = region_data[detail.region[0]].refMonth.indexOf(detail.period[1], idx_begin);
     detail.region.forEach(function(region_name) {
         detail.data.forEach(function(data_name) {
+            var axis_idx = getIndexFromList(data_name, second_axis_prefix);
+            axis_need[axis_idx] = true;
             var label = region_name + '-' + data_name;
             chart_data_set.push({
                 label: label,
+                yAxisID: 'axis'+axis_idx,
                 borderColor: getColour(label),
                 backgroundColor: getColour(label),
                 data: region_data[region_name][data_name].slice(idx_begin, idx_end)
             });
         });
     });
+
+    var scale_option = {yAxes:[]};
+    var side = 'left';
+    for(var idx = 0 ; idx < axis_need.length ; ++idx) {
+        if (axis_need[idx]) {
+            scale_option.yAxes.push({
+                id: 'axis'+idx,
+                type: 'linear',
+                position: side,
+                ticks: {
+                    callback: formatting_function[idx]
+                }
+            });
+            // toggle side
+            side = (side == 'left' ? 'right' : 'left');
+        }
+    }
 
     // line chart data
     var chart_data = {
@@ -179,13 +222,7 @@ function render_graph(detail) {
     // create the options
     options = {
         fill: false,
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: false
-                }
-            }]
-        },
+        scales: scale_option,
         /*This is how to customize the way the labels look :) */
         tooltipTemplate: "<%if (label){%><%=label%>: <%}%>$<%= value %>",
         label: 'test',
@@ -225,7 +262,7 @@ function render_graph(detail) {
     var chart_panel = $("<div id='" + chart_id + "' class='row chart-panel'></div>");
     var chart_panel_head = $("<div class='chart-panel-head'> " + detail.region.join(' ') + " / " +
                          detail.data.join(' ') + " / " + detail.period.join('_') + "</div>");
-    var close_icon = $("<span class='glyphicon glyphicon-remove-sign' aria-hidden='true' style='color: #992222;'></span>");
+    var close_icon = $("<span class='glyphicon glyphicon-remove-sign clickable' aria-hidden='true' style='color: #992222;'></span>");
     close_icon.on('click', function () {
         $('#'+chart_id).slideUp("fast", function() {
             $('#'+chart_id).remove();
@@ -310,7 +347,7 @@ $(function() {
         $('#selected-region').html('');
         selected_region.forEach(function(val) {
             var element_id = 'region_' + val + '_selected';
-            item = $("<span class='label label-success' style='margin-right: 2px'>" + val +  " <span class='glyphicon glyphicon-remove'></span></span>");
+            item = $("<span class='label label-success' style='margin-right: 2px'>" + val +  " <span class='glyphicon glyphicon-remove  clickable'></span></span>");
             item.css('margin-right', '2px');
             item.css('display', 'inline-block');
             item.attr("id", element_id);
@@ -353,7 +390,7 @@ $(function() {
         dummy_options.forEach(function(val) {
             var element_id = 'option_' + val + '_selected';
             
-            item = $("<span class='label label-primary' style='margin-right: 2px'>" + val +  "</span>");
+            item = $("<span class='label label-primary clickable' style='margin-right: 2px'>" + val +  "</span>");
             item.css('margin-right', '2px');
             item.css('margin-bottom', '2px');
             item.css('display', 'inline-block');
