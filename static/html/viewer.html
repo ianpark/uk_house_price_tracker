@@ -7,12 +7,12 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
         <link rel="stylesheet" href="/css/dashboard.css">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 
         <script src="/js/q.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.bundle.min.js"></script>
-        <script src="/js/RangeSlider-minimal.min.js"></script>
     </head>
     <body>
         <!-- Navi bar -->
@@ -40,21 +40,21 @@
         <!-- Main components -->
         <div class="container">
             <div class="row">
-                    <h2 class="page-header">Chart Generator</h2>
-                    <label>Add region to check</label>
-                    <input type="text" id="region_search" list="region_search_data" placeholder="e.g. richmond-upon-thames, and press enter key to append.">
-                    <datalist id="region_search_data"></datalist>
-                    <h4><div id="selected_region"></div></h4>
-                    <label>Options</label>
-                    <h5><div id="option_container"></div></h5>
-                    <label>Period (Year-Month)</label>
-                    <input id="period" class="form-control" value="2010-05 2017-01"></input>
-                    
-                    <button onclick="draw_graph()" class="btn btn-lg btn-default">Go</button>
+                <h2 class="page-header">Chart Generator</h2>
+                <label>Add region to check</label>
+                <input type="text" id="region-search" list="region-search-data" placeholder="e.g. richmond-upon-thames, and press enter key to append.">
+                <datalist id="region-search-data"></datalist>
+                <h4><div id="selected-region"></div></h4>
+                <label>Options</label>
+                <h5><div id="option-container"></div></h5>
+                <label>Period (Year-Month)</label>
+                <input id="period" class="form-control" value="2010-05 2017-01"></input>
+                
+                <button onclick="draw_graph()" class="btn btn-lg btn-default">Go</button>
             </div>
-            <div class="row" style="height: 400px;">
-                <canvas id="hpc_chart"></canvas>
-            </div>
+            <hr class="star-light">
+            <section id="chart-ground">
+            </sction>
         </div>
         <!-- Data loading modal -->
         <div id="in_progress_dlg" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">

@@ -142,3 +142,17 @@ input {
   text-align: left;
   vertical-align: middle;
 }
+
+.chart-panel {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  box-shadow: 5px 5px 5px #bbbbbb;
+  border: #bbbbbb 1px solid;
+}
+
+.chart-panel-head {
+  font-size: 9pt;
+  color: #888899;
+}

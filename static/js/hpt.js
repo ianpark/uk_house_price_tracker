@@ -1,6 +1,6 @@
 var region_data = {};
 var selected_region = ['london', 'richmond-upon-thames', 'hampshire'];
-var selected_option = ['averagePrice', 'housePriceIndexCash', 'averagePriceMortgage'];
+var selected_option = ['salesVolume'];
 var data_options = {
     'averagePrice': [
         'Cash',
@@ -81,6 +81,8 @@ var dummy_options = ['averagePrice',
 'refPeriodDuration',
 'refPeriodStart',
 'salesVolume'];
+
+var chart_id_sequence = 0;
 
 function load_region_data(region_name) {
     if (!region_data.hasOwnProperty(region_name)) {
@@ -216,21 +218,36 @@ function render_graph(detail) {
             },
         }
     };
-    // get line chart canvas
-    var ctx = document.getElementById("hpc_chart");
-    var hpc_chart = new Chart(ctx, {
+    // Get chart panel
+    var chart_id = "chart_palen_" + chart_id_sequence++;
+    var chart_panel = $("<div id='" + chart_id + "' class='row chart-panel' style='height: 500px;'></div>");
+    var chart_panel_head = $("<div class='chart-panel-head'> " + detail.region.join(' ') + " / " +
+                         detail.data.join(' ') + " / " + detail.period.join('_') + "</div>");
+    var close_icon = $("<span class='glyphicon glyphicon-remove-sign' aria-hidden='true' style='color: #992222;'></span>");
+    close_icon.on('click', function () {
+        $('#'+chart_id).remove()
+    });
+    chart_panel_head.prepend(close_icon);
+    chart_panel.append(chart_panel_head);
+    // Create a new canvas and add to the panel to activate it
+    var new_canvas = $('<canvas></canvas>');
+    chart_panel.append(new_canvas);
+    $('#chart-ground').prepend(chart_panel);
+    
+    var hpc_chart = new Chart(new_canvas, {
         type: 'line',
         data: chart_data,
         options: options
     });
+
 }
 
 
 // On load
 $(function() {
     // Get the <datalist> and <input> elements.
-    var dataList = document.getElementById('region_search_data');
-    var input = document.getElementById('region_search');
+    var dataList = document.getElementById('region-search-data');
+    var input = document.getElementById('region-search');
 
     // Create a new XMLHttpRequest.
     var request = new XMLHttpRequest();
@@ -285,7 +302,7 @@ $(function() {
         return false;
     }
     function display_selected_region() {
-        $('#selected_region').html('');
+        $('#selected-region').html('');
         selected_region.forEach(function(val) {
             var element_id = 'region_' + val + '_selected';
             item = $("<span class='label label-success' style='margin-right: 2px'>" + val +  " <span class='glyphicon glyphicon-remove'></span></span>");
@@ -296,15 +313,15 @@ $(function() {
                 delete_from_region_list(val);
                 $('#' + element_id).remove();
             });
-            $('#selected_region').append(item); 
+            $('#selected-region').append(item); 
         });
     }
-    $('#region_search').on('keypress',function (e) {
+    $('#region-search').on('keypress',function (e) {
         if (e.which == 13) {
-            if (add_to_region_list($('#region_search').val())) {
+            if (add_to_region_list($('#region-search').val())) {
                 display_selected_region();
             }
-            $('#region_search').val('');
+            $('#region-search').val('');
         }
     });
     display_selected_region();
@@ -327,7 +344,7 @@ $(function() {
         return false;
     }
     function display_options() {
-        $('#option_container').html('');
+        $('#option-container').html('');
         dummy_options.forEach(function(val) {
             var element_id = 'option_' + val + '_selected';
             
@@ -350,7 +367,7 @@ $(function() {
                 });
             }
 
-            $('#option_container').append(item); 
+            $('#option-container').append(item); 
         });
     }
     display_options();
