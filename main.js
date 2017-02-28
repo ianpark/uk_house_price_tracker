@@ -31,7 +31,6 @@ app.get('/region/:name', function(req, res) {
 });
 
 app.post('/api/log/action', function(req, res) {
-      logger.info(req.body);
       logger.info(JSON.stringify(req.body));
       res.status(200);
 });
