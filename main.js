@@ -35,7 +35,7 @@ app.post('/api/log/action', function(req, res) {
       res.status(200);
 });
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 7540;
 app.listen(port, function() {
       logger.info('Listening on ' + port);
 });
