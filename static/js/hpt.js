@@ -258,10 +258,11 @@ function render_graph(detail) {
         }
     };
     // Get chart panel
+    var chart_head_message = detail.region.join(' ') + " | " +
+                         detail.data.join(' ') + " | " + detail.period.join('_');
     var chart_id = "chart_palen_" + chart_id_sequence++;
     var chart_panel = $("<div id='" + chart_id + "' class='row chart-panel'></div>");
-    var chart_panel_head = $("<div class='chart-panel-head'> " + detail.region.join(' ') + " / " +
-                         detail.data.join(' ') + " / " + detail.period.join('_') + "</div>");
+    var chart_panel_head = $("<div class='chart-panel-head'> " + chart_head_message + "</div>");
     var close_icon = $("<span class='glyphicon glyphicon-remove-sign clickable' aria-hidden='true' style='color: #992222;'></span>");
     close_icon.on('click', function () {
         $('#'+chart_id).slideUp("fast", function() {
@@ -282,6 +283,13 @@ function render_graph(detail) {
         options: options
     });
 
+    $.ajax({type: "POST",
+            url: '/api/log/action',
+            data: JSON.stringify({type: 'create-chart',
+                   detail: chart_head_message}),
+            contentType: "application/json; charset=utf-8",
+            dataType: 'json',
+            success: function() {}});
 }
 
 
