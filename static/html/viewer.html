@@ -79,7 +79,7 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        <div id="failure_dlg" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
+        <div id="message_dlg" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog" style="width: 400px">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -91,8 +91,16 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-
+        <div id="info_dlg" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+            <div class="modal-dialog" style="width: 400px">
+                <div class="modal-content">
+                    <div id="modal_message_body" class="modal-body"></div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div id="hidden_drawing_area" style="width: 0px; height: 0px;"></div>
         <script src="/js/hpt.js"></script>
+        <script src="/js/charts.js"></script>
     </body>
 </html>
 <script>
