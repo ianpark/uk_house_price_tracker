@@ -27,7 +27,9 @@ function render_graph(detail) {
     ]
     var chart_data_set = [];
     var idx_begin = region_data[detail.region[0]].refMonth.indexOf(detail.period[0]);
+    if (idx_begin == -1) { idx_begin = 0; }
     var idx_end = region_data[detail.region[0]].refMonth.indexOf(detail.period[1], idx_begin);
+    if (idx_end == -1) { idx_end = region_data[detail.region[0]].refMonth.length;}
     detail.region.forEach(function(region_name) {
         detail.data.forEach(function(data_name) {
             var axis_idx = getIndexFromList(data_name, second_axis_prefix);
@@ -38,7 +40,7 @@ function render_graph(detail) {
                 yAxisID: 'axis'+axis_idx,
                 borderColor: getColour(label),
                 backgroundColor: getColour(label),
-                data: region_data[region_name][data_name].slice(idx_begin, idx_end)
+                data: region_data[region_name][data_name].slice(idx_begin, idx_end + 1)
             });
         });
     });
@@ -62,7 +64,7 @@ function render_graph(detail) {
 
     // line chart data
     var chart_data = {
-        labels: region_data[detail.region[0]].refMonth.slice(idx_begin, idx_end),
+        labels: region_data[detail.region[0]].refMonth.slice(idx_begin, idx_end + 1),
         datasets: chart_data_set
     };
     // create the options
@@ -175,3 +177,4 @@ function render_graph(detail) {
             dataType: 'json',
             success: function() {}});
 }
+
