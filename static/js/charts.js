@@ -139,8 +139,7 @@ function render_graph(detail) {
         // copy
         document.execCommand("copy");
         $('#hidden_drawing_area').html('');
-        $('#info_dlg').find('.modal-body').text("Copied to clipboard. Use ctrl-v to paste in any text area.");
-        $('#info_dlg').modal('show');
+        get_modal('info').msg('Copied to clipboard. Use ctrl-v to paste in any text area.');
     });
     var download_icon = $("<span class='glyphicon glyphicon-download clickable' aria-hidden='true' style='color: #4B610B;'></span>");
     download_icon.on('click', function() {

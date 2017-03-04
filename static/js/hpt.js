@@ -1,6 +1,9 @@
+requirejs(["modals"], function(util) {});
+requirejs(["charts"], function(util) {});
+
 var region_data = {};
-var selected_region = ['richmond-upon-thames'];
-var selected_option = ['averagePrice'];
+var selected_region = [];
+var selected_option = [];
 var data_options = {
     'averagePrice': [
         'Cash',
@@ -103,27 +106,34 @@ function load_region_data(region_name) {
 }
 
 function draw_graph() {
-    $('#in_progress_dlg').modal('show');
+    if (selected_region.length == 0) {
+        get_modal('warning').msg('Please add at least one region. You might have forgot pressing enter.');
+        return;
+    }
+    if (selected_option.length == 0) {
+        get_modal('warning').msg('Please set at least one option');
+        return;
+    }
     var graph_detail = {region: selected_region,
                         data: selected_option,
                         period: $('#period').val().split(' ')
                        };
+    var progress_modal = get_modal('progress').show();
     Q.all(graph_detail.region.map(load_region_data))
     .then(function() {
         setTimeout(function() {
-            $('#in_progress_dlg').modal('hide');
+            progress_modal.hide();
             setTimeout(function() {
                 render_graph(graph_detail);
             }, 500);
         }, 200);
         
     }).catch(function(err) {
-        $('#in_progress_dlg').modal('hide');
+        progress_modal.hide();
         var message = 'Failed to read data from the server';
         if (err.responseJSON) {}
             message += "\n: No region data for " + err.responseJSON.region_name;
-        $('#message_dlg').find('.modal-body').text(message);
-        $('#message_dlg').modal('show');
+        show_message_dialog(message);
     });
 }
 
