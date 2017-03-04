@@ -166,3 +166,9 @@ input {
 .glyphicon {
   margin: 1px;
 }
+.ui-autocomplete {
+  max-height: 120px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+}

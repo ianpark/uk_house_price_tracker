@@ -1,6 +1,6 @@
 requirejs(["modals"], function(util) {});
 requirejs(["charts"], function(util) {});
-
+var region_list;
 var region_data = {};
 var selected_region = [];
 var selected_option = [];
@@ -133,33 +133,8 @@ function draw_graph() {
         var message = 'Failed to read data from the server';
         if (err.responseJSON) {}
             message += "\n: No region data for " + err.responseJSON.region_name;
-        show_message_dialog(message);
+        get_modal('warning').msg(message);
     });
-}
-
-var randomColorGenerator = function () { 
-    return '#' + (Math.random().toString(16) + '666666').slice(2, 8); 
-};
-
-function hashCode(str) { // java String#hashCode
-    var hash = 0;
-    for (var i = 0; i < str.length; i++) {
-       hash = str.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    return hash;
-} 
-
-function intToRGB(i){
-    var c = (i & 0x00FFFFFF)
-        .toString(16)
-        .toUpperCase();
-    return "00000".substring(0, 6 - c.length) + c;
-}
-
-function getColour(str) {
-    console.log(str);
-    console.log(intToRGB(hashCode(str)));
-    return '#' + intToRGB(hashCode(str));
 }
 
 // On load
@@ -168,40 +143,6 @@ $(function() {
     var dataList = document.getElementById('region-search-data');
     var input = document.getElementById('region-search');
 
-    // Create a new XMLHttpRequest.
-    var request = new XMLHttpRequest();
-    // Handle state changes for the request.
-    request.onreadystatechange = function (response) {
-        if (request.readyState === 4) {
-            if (request.status === 200) {
-                // Parse the JSON
-                var jsonOptions = JSON.parse(request.responseText);
-
-                // Loop over the JSON array.
-                jsonOptions.forEach(function (item) {
-                    // Create a new <option> element.
-                    var option = document.createElement('option');
-                    // Set the value using the item in the JSON array.
-                    option.value = item;
-                    // Add the <option> element to the <datalist>.
-                    dataList.appendChild(option);
-                });
-
-                // Update the placeholder text.
-                input.placeholder = "Local authorities, UK regions or counties. Press enter key to add.";
-            } else {
-                // An error occured :(
-                input.placeholder = "Couldn't load datalist options :(";
-            }
-        }
-    };
-
-    // Update the placeholder text.
-    input.placeholder = "Loading options...";
-
-    // Set up and make the request.
-    request.open('GET', 'region.json', true);
-    request.send();
     // Display Selected Region
     function delete_from_region_list(val) {
         var idx = selected_region.indexOf(val);
@@ -235,14 +176,7 @@ $(function() {
             $('#selected-region').append(item); 
         });
     }
-    $('#region-search').on('keypress',function (e) {
-        if (e.which == 13) {
-            if (add_to_region_list($('#region-search').val())) {
-                display_selected_region();
-            }
-            $('#region-search').val('');
-        }
-    });
+
     display_selected_region();
 
     // Display selected options
@@ -307,5 +241,26 @@ $(function() {
         // copy
         document.execCommand("copy");
         alert('Copied to clipboard. CTRL+V in your email app.');
+    });
+
+    // Region field autocompletion
+    Q($.ajax({url: 'region.json', dataType: 'json'}))
+    .then(function(result) {
+        region_list = result;
+        $( "#region-search" ).autocomplete({
+            source: region_list,
+            autoFocus: true,
+            delay: 0,
+            minLength: 3,
+            select: function( event, ui ) {
+                console.log(ui.item.value);
+                if (add_to_region_list(ui.item.value)) {
+                    display_selected_region();
+                }
+                setTimeout(function() {
+                    $('#region-search').val('');
+                }, 0);
+            }
+        });
     });
 });

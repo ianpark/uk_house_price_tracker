@@ -1,3 +1,24 @@
+function hashCode(str) { // java String#hashCode
+    var hash = 0;
+    for (var i = 0; i < str.length; i++) {
+       hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return hash;
+} 
+
+function intToRGB(i){
+    var c = (i & 0x00FFFFFF)
+        .toString(16)
+        .toUpperCase();
+    return "00000".substring(0, 6 - c.length) + c;
+}
+
+function getColour(str) {
+    console.log(str);
+    console.log(intToRGB(hashCode(str)));
+    return '#' + intToRGB(hashCode(str));
+}
+
 function render_graph(detail) {
     Chart.defaults.global.tooltips.enabled = true;
     Chart.defaults.global.tooltips.intersect = false;
