@@ -4,36 +4,32 @@ var region_list;
 var region_data = {};
 var selected_region = [];
 var selected_option = [];
-var data_options = {
-    'averagePrice': [
-        'Cash',
-        'ExistingProperty',
-        'FirstTimeBuyer',
-        'FormerOwnerOccupier',
-        'Mortgage',
-        'NewBuild',
-        'SA'
-    ],
-    'housePriceIndex': [
-        'Cash',
-        'ExistingProperty',
-        'FirstTimeBuyer',
-        'FormerOwnerOccupier',
-        'Mortgage',
-        'NewBuild',
-        'SA'
-    ],
-    'percentageAnnualChange': [
-        'Cash',
-        'ExistingProperty',
-        'FirstTimeBuyer',
-        'FormerOwnerOccupier',
-        'Mortgage',
-        'NewBuild',
-        'SA'
-    ],
-    'salesVolume': []
-}
+
+var data_options = [
+            {name: 'All', symbol: ''},
+            {name: 'Flat/Maisonette', symbol: 'FlatMaisonette'},
+            {name: 'Terraced', symbol: 'Terraced'},
+            {name: 'Semi Detached', symbol: 'SemiDetached'},
+            {name: 'Detached', symbol: 'Detached'},
+            {name: 'Cash', symbol: 'Cash'},
+            {name: 'Mortgage', symbol: 'Mortgage'},
+            {name: 'First Time Buyer', symbol: 'FirstTimeBuyer'},
+            {name: 'Former Owner', symbol: 'FormerOwnerOccupier'},
+            {name: 'Existing Property', symbol: 'ExistingProperty'},
+            {name: 'New Build', symbol: 'NewBuild'},
+];
+
+var other_options = [
+    {name: 'Sales Volume', symbol: 'salesVolume'}
+];
+
+var data_indicators = [
+    {name: 'Average Price', symbol: 'averagePrice', option: data_options},
+    {name: 'House Price Idx', symbol: 'housePriceIndex', option: data_options},
+    {name: 'Monthly Change (%)', symbol: 'percentageChange', option: data_options},
+    {name: 'Annual Change (%)', symbol: 'percentageAnnualChange', option: data_options},
+    {name: 'Others', symbol: '', option: other_options}
+];
 
 var dummy_options = ['averagePrice',
 'averagePriceCash',
@@ -82,7 +78,6 @@ var dummy_options = ['averagePrice',
 'percentageChangeSemiDetached',
 'percentageChangeTerraced',
 'salesVolume'];
-
 
 function getIndexFromList(str, prefixes) {
     var i = prefixes.length;
@@ -139,10 +134,6 @@ function draw_graph() {
 
 // On load
 $(function() {
-    // Get the <datalist> and <input> elements.
-    var dataList = document.getElementById('region-search-data');
-    var input = document.getElementById('region-search');
-
     // Display Selected Region
     function delete_from_region_list(val) {
         var idx = selected_region.indexOf(val);
@@ -197,31 +188,34 @@ $(function() {
         return false;
     }
     function display_options() {
-        $('#option-container').html('');
-        dummy_options.forEach(function(val) {
-            var element_id = 'option_' + val + '_selected';
-            
-            item = $("<span class='label label-primary clickable' style='margin-right: 2px'>" + val +  "</span>");
-            item.css('margin-right', '2px');
-            item.css('margin-bottom', '2px');
-            item.css('display', 'inline-block');
-            item.css('font-weight', '400');
-            item.attr("id", element_id);
-            if (selected_option.indexOf(val) != -1) {
-                item.on('click', function() {
-                    delete_from_option_list(val);
-                    display_options();
-                });           
-            } else {
-                item.css('background-color', '#BBBBBB');
-                item.on('click', function() {
-                    add_to_option_list(val);
-                    display_options();
-                });
-            }
-
-            $('#option-container').append(item); 
+        $('#option-container').html('');        
+        var option_table = $('<table class="table"></table>');
+        data_indicators.forEach(function(item) {
+            var tr = $('<tr><td class="option-table" style="width: 140px;">'+ item.name +'</td></tr>')
+            var td = $('<td class="option-table"></td>');
+            item.option.forEach(function(subitem){
+                var full_symbol = item.symbol + subitem.symbol;
+                var element_id = 'option_' + full_symbol + '_selected';
+                opt_btn = $("<span class='label label-primary option-label clickable'>" + subitem.name +  "</span>");
+                opt_btn.attr("id", element_id);
+                if (selected_option.indexOf(full_symbol) != -1) {
+                    opt_btn.on('click', function() {
+                        delete_from_option_list(full_symbol);
+                        display_options();
+                    });           
+                } else {
+                    opt_btn.css('background-color', '#aaaaaa');
+                    opt_btn.on('click', function() {
+                        add_to_option_list(full_symbol);
+                        display_options();
+                    });
+                }
+                td.append(opt_btn);
+            });
+            tr.append(td);
+            option_table.append(tr);
         });
+        $('#option-container').append(option_table);
     }
     display_options();
     $('#mytest').on('click', function() {

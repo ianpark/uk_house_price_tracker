@@ -10,8 +10,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-
         <script src="/js/q.js"></script>
         <link rel="stylesheet" href="css/jquery-ui.css">
         <script src="js/jquery-ui.js"></script>
@@ -44,20 +42,20 @@
         <!-- Main components -->
         <div class="container">
             <div class="row">
-                <h2 class="page-header">Chart Generator</h2>
-                <label>Add region to check</label>
-                <input type="text" id="region-search" list="region-search-data" placeholder="e.g. richmond-upon-thames, and press enter key to append.">
-                <datalist id="region-search-data"></datalist>
+                <h2 class="page-header">Paid House Price - Chart Generator</h2>
+                <label>Regions</label>
+                <input type="text" id="region-search" placeholder="e.g. richmond-upon-thames, and press enter key to append.">
                 <h4><div id="selected-region"></div></h4>
                 <label>Options</label>
-                <h5><div id="option-container"></div></h5>
+                <div id="option-container"></div>
             </div>
             <div class="row">
-                <div class=".col-xs-12 .col-sm-6 .col-md-8">
-                    <label>Period (Year-Month)</label>
-                    <input id="period" class="form-control" value="2010-05 2017-01"></input>
+                <div>
+                    <label>Period</label>
+                    <input id="period" class="form-control" value="2010-05 2017-01" style="width:140px;display:inline-block"></input>
+                    <button onclick="draw_graph()" class="btn btn-mid btn-success" style="display:inline-block">Draw a chart!</button>
+                    <h6>All datasets are obtained from Land Registry Open Data (http://landregistry.data.gov.uk/)</h6>
                 </div>
-                <div class=".col-xs-6 .col-md-4"><button onclick="draw_graph()" class="btn btn-lg btn-success">Draw a chart!</button></div>
             </div>
             <hr class="star-light">
             <section id="chart-ground">

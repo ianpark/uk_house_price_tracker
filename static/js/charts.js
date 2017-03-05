@@ -135,7 +135,7 @@ function render_graph(detail) {
     var chart_panel_head = $("<div class='chart-panel-head'> " + chart_head_message + "</div>");
     var close_icon = $("<span class='glyphicon glyphicon-remove-sign clickable' aria-hidden='true' style='color: #992222;'></span>");
     close_icon.on('click', function () {
-        $('#'+chart_id).slideUp("fast", function() {
+        $('#'+chart_id).slideUp("slow", function() {
             $('#'+chart_id).remove();
         });
     });
@@ -180,7 +180,7 @@ function render_graph(detail) {
     // Create a new canvas and add to the panel to activate it
     var new_canvas = $("<canvas id='" + canvas_id + "'></canvas>");
     chart_panel.append($("<div style='height: 400px;'></div>").append(new_canvas));
-    chart_panel.prependTo($('#chart-ground')).slideDown("fast");
+    chart_panel.prependTo($('#chart-ground')).slideDown("slow");
     //$('#chart-ground').prepend(chart_panel);
 
     var hpc_chart = new Chart(new_canvas, {

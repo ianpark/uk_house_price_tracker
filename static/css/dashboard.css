@@ -158,6 +158,14 @@ input {
   color: #888899;
 }
 
+.option-label {
+  margin-right: 2px;
+  margin-bottom: 2px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 9pt;
+}
+
 .clickable {
   cursor:pointer;
   cursor:hand;
@@ -171,4 +179,10 @@ input {
   overflow-y: auto;
   /* prevent horizontal scrollbar */
   overflow-x: hidden;
+}
+
+.option-table {
+    border-style: 0;
+    border-top: thin solid #dddddd;
+    vertical-align: top;
 }
