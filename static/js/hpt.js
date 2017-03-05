@@ -1,6 +1,5 @@
 requirejs(["modals"], function(util) {});
 requirejs(["charts"], function(util) {});
-var region_list;
 var region_data = {};
 var selected_region = [];
 var selected_option = [];
@@ -25,69 +24,11 @@ var other_options = [
 
 var data_indicators = [
     {name: 'Average Price', symbol: 'averagePrice', option: data_options},
-    {name: 'House Price Idx', symbol: 'housePriceIndex', option: data_options},
+    {name: 'House Price Index', symbol: 'housePriceIndex', option: data_options},
     {name: 'Monthly Change (%)', symbol: 'percentageChange', option: data_options},
     {name: 'Annual Change (%)', symbol: 'percentageAnnualChange', option: data_options},
     {name: 'Others', symbol: '', option: other_options}
 ];
-
-var dummy_options = ['averagePrice',
-'averagePriceCash',
-'averagePriceDetached',
-'averagePriceExistingProperty',
-'averagePriceFirstTimeBuyer',
-'averagePriceFlatMaisonette',
-'averagePriceFormerOwnerOccupier',
-'averagePriceMortgage',
-'averagePriceNewBuild',
-'averagePriceSA',
-'averagePriceSemiDetached',
-'averagePriceTerraced',
-'housePriceIndex',
-'housePriceIndexCash',
-'housePriceIndexDetached',
-'housePriceIndexExistingProperty',
-'housePriceIndexFirstTimeBuyer',
-'housePriceIndexFlatMaisonette',
-'housePriceIndexFormerOwnerOccupier',
-'housePriceIndexMortgage',
-'housePriceIndexNewBuild',
-'housePriceIndexSA',
-'housePriceIndexSemiDetached',
-'housePriceIndexTerraced',
-'percentageAnnualChange',
-'percentageAnnualChangeCash',
-'percentageAnnualChangeDetached',
-'percentageAnnualChangeExistingProperty',
-'percentageAnnualChangeFirstTimeBuyer',
-'percentageAnnualChangeFlatMaisonette',
-'percentageAnnualChangeFormerOwnerOccupier',
-'percentageAnnualChangeMortgage',
-'percentageAnnualChangeNewBuild',
-'percentageAnnualChangeSemiDetached',
-'percentageAnnualChangeTerraced',
-'percentageChange',
-'percentageChangeCash',
-'percentageChangeDetached',
-'percentageChangeExistingProperty',
-'percentageChangeFirstTimeBuyer',
-'percentageChangeFlatMaisonette',
-'percentageChangeFormerOwnerOccupier',
-'percentageChangeMortgage',
-'percentageChangeNewBuild',
-'percentageChangeSemiDetached',
-'percentageChangeTerraced',
-'salesVolume'];
-
-function getIndexFromList(str, prefixes) {
-    var i = prefixes.length;
-    while (i-- > 0)
-        if (str.lastIndexOf(prefixes[i], 0) === 0)
-            return i;
-    return 0;
-}
-
-var chart_id_sequence = 0;
 
 function load_region_data(region_name) {
     if (!region_data.hasOwnProperty(region_name)) {
@@ -240,9 +181,8 @@ $(function() {
     // Region field autocompletion
     Q($.ajax({url: 'region.json', dataType: 'json'}))
     .then(function(result) {
-        region_list = result;
         $( "#region-search" ).autocomplete({
-            source: region_list,
+            source: result,
             autoFocus: true,
             delay: 0,
             minLength: 3,

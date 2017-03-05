@@ -1,3 +1,13 @@
+function getIndexFromList(str, prefixes) {
+    var i = prefixes.length;
+    while (i-- > 0)
+        if (str.lastIndexOf(prefixes[i], 0) === 0)
+            return i;
+    return 0;
+}
+
+var chart_id_sequence = 0;
+
 function hashCode(str) { // java String#hashCode
     var hash = 0;
     for (var i = 0; i < str.length; i++) {
