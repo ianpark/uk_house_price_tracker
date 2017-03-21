@@ -2,7 +2,7 @@ requirejs(["modals"], function(util) {});
 requirejs(["charts"], function(util) {});
 var region_data = {};
 var selected_region = [];
-var selected_option = [];
+var selected_option = ['averagePrice'];
 
 var data_options = [
             {name: 'All', symbol: ''},
